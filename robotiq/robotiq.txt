@@ -1,0 +1,17 @@
+# 进入根目录
+cd ~/Documents/zsc_Franka/robotiq/ros2_ws
+source install/setup.bash
+
+export ROS_DOMAIN_ID=1
+source install/setup.bash
+ros2 launch robotiq_hande_driver gripper_controller_preview.launch.py \
+  use_fake_hardware:=false \
+  tty_port:=/dev/ttyUSB0
+
+export ROS_DOMAIN_ID=1
+ros2 action send_goal /robotiq/gripper_action_controller/gripper_cmd control_msgs/action/GripperCommand "{command: {position: 0.0, max_effort: 1.0}}"
+
+ros2 action send_goal /robotiq/gripper_action_controller/gripper_cmd control_msgs/action/GripperCommand "{command: {position: 0.05, max_effort: 1.0}}"
+
+
+

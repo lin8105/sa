@@ -1,0 +1,4 @@
+\/bota_driver_node:
+  ros__parameters:
+    config_file: "/home/yue/Documents/zsc_Franka/bota/config/sensone.json"
+    output_rate: 100

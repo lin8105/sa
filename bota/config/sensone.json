@@ -1,0 +1,9 @@
+{
+  "driver_config": {
+    "product_name": "BETA",
+    "device_name": "sensone",
+    "serial_port": "/dev/ttyUSB0",
+    "baudrate": 460800,
+    "tare_on_startup": true
+  }
+}

@@ -1,0 +1,46 @@
+conda deactivate
+
+# 1. 跳转到你的工作空间根目录
+cd ~/Documents/zsc_Franka/ros2_record_trajectory
+
+# 2. 载入全局环境（可选，如果你的 .bashrc 没写的话）
+source /opt/ros/humble/setup.bash
+
+# 3. 载入你当前工作空间的环境（关键！）
+source install/setup.bash
+
+相机驱动
+source install/setup.bash
+ros2 launch orbbec_camera femto_mega.launch.py
+
+进容器
+docker start multipanda-container
+docker exec -it multipanda-container /bin/bash
+
+exit
+
+1
+xhost +
+docker exec -it -e DISPLAY=$DISPLAY multipanda-container /bin/bash
+
+2
+cd ~/multipanda_ws
+source install/setup.bash
+ros2 launch franka_bringup franka.launch.py robot_ip:=192.168.3.100
+
+3
+source install/setup.bash
+ros2 launch orbbec_camera femto_mega.launch.py
+
+4
+source ~/multipanda_ws/install/setup.bash
+ros2 run ros2_aruco aruco_node --ros-args -p marker_size:=0.05 -p aruco_dictionary_id:=DICT_4X4_50 -r /image_raw:=/camera/color/image_raw -r /camera_info:=/camera/color/camera_info
+
+5
+cd ~/multipanda_ws
+source install/setup.bash
+ros2 launch franka_handeye_calibration_ros2 calibrate.launch.py
+
+ros2 topic echo /aruco_markers
+
+ros2 node list

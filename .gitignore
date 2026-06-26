@@ -1,0 +1,14 @@
+# 忽略数据与多媒体文件
+*.csv
+*.avi
+*.png
+*.pdf
+*.npy
+
+# 开发过程中的临时目录
+build/
+install/
+log/
+__pycache__/
+.log
+.DS_Store

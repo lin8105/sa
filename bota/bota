@@ -1,0 +1,13 @@
+source install/setup.bash
+ros2 run bota_driver bota_driver_node --ros-args   -p node_name:=bota_ft_sensor   -p config_file:="/home/yue/Documents/zsc_Franka/bota/src/bota_driver_ros2_example/bota_config/ethercat_gen0.json"   -p output_rate:=100.0
+
+读数
+ros2 topic echo /bota_payload_compensator/wrench
+
+清零
+ros2 service call /bota_ft_sensor/tare std_srvs/srv/Trigger
+
+补偿
+source install/setup.bash
+ros2 run bota_payload_utils bota_payload_compensator_node --ros-args   -p node_name:=bota_payload_compensator   -p input_node_name:=bota_ft_sensor   -p config_file:="/home/yue/Documents/zsc_Franka/bota/src/bota_driver_ros2_example/bota_config/payload_config.json"
+

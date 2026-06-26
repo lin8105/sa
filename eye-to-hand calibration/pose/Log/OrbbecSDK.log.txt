@@ -1,0 +1,1526 @@
+[06/15 16:26:24.683731][info][169651][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 16:26:24.683770][info][169651][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 16:26:24.683776][info][169651][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:26:24.683781][info][169651][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 16:26:25.692898][info][169651][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 16:26:25.692921][info][169651][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:26:25.713621][info][169651][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 16:26:25.713657][info][169651][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x6018950
+[06/15 16:26:25.730784][info][169651][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 16:26:25.730791][info][169651][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 16:26:25.730795][info][169651][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 16:26:25.730799][info][169651][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 16:26:25.730803][info][169651][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 16:26:25.736845][info][169651][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 16:26:25.736847][info][169651][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 16:26:25.736928][info][169686][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 16:26:26.299425][info][169686][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 16:26:26.616483][warning][169702][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 16:26:29.631945][warning][169702][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**91 logs in 3015ms**]
+[06/15 16:26:31.317780][info][169686][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.490234fps
+[06/15 16:26:31.332065][info][169702][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.508476fps
+[06/15 16:26:35.651204][warning][169702][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**181 logs in 6019ms**]
+[06/15 16:26:36.332460][info][169686][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:26:36.347882][info][169702][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:26:36.716431][info][169651][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 16:26:36.716438][info][169651][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 16:26:36.716458][info][169651][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 16:26:37.086394][info][169651][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 16:26:37.086676][info][169651][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 16:26:37.086682][info][169651][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 16:26:37.087698][info][169651][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 16:26:37.087734][info][169651][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x6018950
+[06/15 16:26:37.087877][info][169651][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 16:26:37.099768][warning][169772][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**31 logs in 1448ms, last: 16:26:36.680616**]
+[06/15 16:26:38.463836][info][169804][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 16:26:38.463850][info][169804][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 16:26:38.463852][info][169804][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:26:38.463854][info][169804][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 16:26:39.472554][info][169804][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 16:26:39.472579][info][169804][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:26:39.492568][info][169804][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 16:26:39.492610][info][169804][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x2638950
+[06/15 16:26:39.510349][info][169804][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 16:26:39.510356][info][169804][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 16:26:39.510361][info][169804][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 16:26:39.510364][info][169804][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 16:26:39.510368][info][169804][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 16:26:39.514129][info][169804][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 16:26:39.514133][info][169804][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 16:26:39.514131][info][169837][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 16:26:40.090302][info][169837][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 16:26:40.406487][warning][169841][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 16:26:43.429116][warning][169841][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**91 logs in 3022ms**]
+[06/15 16:26:45.107013][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.496311fps
+[06/15 16:26:45.121311][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.526735fps
+[06/15 16:26:49.444165][warning][169841][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**181 logs in 6015ms**]
+[06/15 16:26:50.128127][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:26:50.144534][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 16:26:55.145603][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:26:55.160862][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:27:00.163232][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:27:00.178413][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:27:01.475567][warning][169841][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**362 logs in 12031ms**]
+[06/15 16:27:05.181551][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:27:05.195340][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:27:10.199377][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:27:10.209532][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 16:27:15.219180][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:27:15.234546][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.049751fps
+[06/15 16:27:20.239736][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:27:20.254541][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:27:25.256361][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:27:25.271785][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:27:25.501244][warning][169841][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**723 logs in 24025ms**]
+[06/15 16:27:30.277015][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:27:30.287477][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:27:35.291986][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:27:35.305945][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:27:40.312421][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:27:40.327659][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 16:27:45.332319][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:27:45.346851][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:27:50.351505][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:27:50.367398][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:27:55.367552][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:27:55.383001][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 16:28:00.385109][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:28:00.399705][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:28:05.402103][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:28:05.416333][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:28:10.421811][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:28:10.434477][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:28:13.526945][warning][169841][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**1445 logs in 48025ms**]
+[06/15 16:28:15.440778][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:28:15.459024][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.055731fps
+[06/15 16:28:20.457746][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:28:20.471321][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/15 16:28:25.475183][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:28:25.487211][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 16:28:30.498087][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/15 16:28:30.512298][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.043772fps
+[06/15 16:28:35.513921][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:28:35.529520][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:28:40.533195][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:28:40.549033][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:28:45.552021][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:28:45.567334][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:28:50.567519][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:28:50.580526][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/15 16:28:55.588862][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:28:55.603545][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 16:29:00.606258][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:29:00.622433][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:29:05.623226][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:29:05.635650][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/15 16:29:10.646338][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/15 16:29:10.661851][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.043772fps
+[06/15 16:29:13.548089][warning][169841][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**1806 logs in 60021ms**]
+[06/15 16:29:15.659588][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.115677fps
+[06/15 16:29:15.673075][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.133705fps
+[06/15 16:29:20.680665][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:29:20.695570][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 16:29:25.699560][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:29:25.715080][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:29:30.723233][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/15 16:29:30.740341][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.043772fps
+[06/15 16:29:35.736673][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.115677fps
+[06/15 16:29:35.751091][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.139719fps
+[06/15 16:29:40.759081][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 16:29:40.778545][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.031822fps
+[06/15 16:29:45.776704][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:29:45.791661][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/15 16:29:50.795993][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:29:50.801080][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.145739fps
+[06/15 16:29:55.811519][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:29:55.816656][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:30:00.835836][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.055731fps
+[06/15 16:30:00.841132][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.055731fps
+[06/15 16:30:05.852914][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:30:05.858142][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:30:10.867853][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:30:10.873066][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 16:30:13.582691][warning][171005][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**1031 logs in 60034ms, last: 16:29:47.843973**]
+[06/15 16:30:15.887040][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:30:15.892221][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:30:20.906718][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:30:20.912888][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:30:25.924698][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:30:25.929888][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:30:30.945523][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:30:30.951406][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 16:30:35.962364][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:30:35.967512][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:30:40.981958][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:30:40.987128][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:30:46.000043][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:30:46.005551][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:30:51.018889][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:30:51.024705][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:30:56.037914][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:30:56.043095][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:31:01.056390][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:31:01.061470][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:31:06.074965][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:31:06.082545][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:31:11.091657][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:31:11.096818][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 16:31:16.109563][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:31:16.114705][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:31:21.129337][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:31:21.134592][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:31:26.147245][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:31:26.152347][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:31:31.164450][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:31:31.169752][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:31:36.186130][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:31:36.191361][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 16:31:41.204682][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:31:41.209846][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:31:46.220775][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:31:46.227748][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:31:51.239776][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:31:51.245007][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:31:56.258259][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:31:56.263522][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:32:01.277202][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:32:01.282626][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:32:06.295370][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:32:06.301261][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:32:11.315893][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:32:11.321293][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:32:16.334557][info][169837][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:32:16.339738][info][169841][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:32:18.037907][info][169804][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 16:32:18.037913][info][169804][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 16:32:18.037927][info][169804][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 16:32:18.405414][info][169804][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 16:32:18.405647][info][169804][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 16:32:18.405654][info][169804][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 16:32:18.406781][info][169804][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 16:32:19.948330][info][169804][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x2638950
+[06/15 16:32:19.948388][info][169804][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 16:36:18.812302][info][173786][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 16:36:18.812337][info][173786][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 16:36:18.812343][info][173786][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:36:18.812348][info][173786][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 16:36:19.820476][info][173786][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 16:36:19.820498][info][173786][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:36:19.843540][info][173786][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 16:36:19.843578][info][173786][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x30B69950
+[06/15 16:36:19.860301][info][173786][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 16:36:19.860307][info][173786][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 16:36:19.860311][info][173786][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 16:36:19.860315][info][173786][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 16:36:19.860319][info][173786][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 16:36:19.864163][info][173786][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 16:36:19.864164][info][173786][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 16:36:19.864169][info][173831][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 16:36:20.406799][info][173831][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 16:36:20.721942][warning][173835][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 16:36:23.757495][warning][173837][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**37 logs in 3035ms, last: 16:36:21.974034**]
+[06/15 16:36:25.422707][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.502394fps
+[06/15 16:36:25.427781][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.569429fps
+[06/15 16:36:30.441160][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:36:30.446259][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:36:35.458558][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:36:35.464175][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:36:40.476373][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:36:40.481457][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:36:45.495740][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:36:45.500957][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:36:50.511931][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:36:50.517232][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:36:55.530083][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:36:55.535328][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:37:00.547471][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:37:00.552801][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:37:05.566008][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:37:05.571832][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:37:10.581143][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:37:10.586358][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 16:37:15.601528][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:37:15.606866][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:37:20.621457][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:37:20.626653][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:37:25.640137][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:37:25.645395][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:37:30.658005][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:37:30.663212][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:37:35.674926][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:37:35.680400][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:37:40.696903][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 16:37:40.702104][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:37:45.713147][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:37:45.718315][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:37:50.731530][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:37:50.737592][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:37:55.746891][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:37:55.752056][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 16:38:00.768704][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 16:38:00.773793][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 16:38:05.788795][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:38:05.793889][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:38:10.806040][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:38:10.811357][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:38:15.824430][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:38:15.829604][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:38:20.845145][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:38:20.850320][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:38:25.863097][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:38:25.868275][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:38:30.877868][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:38:30.882999][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 16:38:35.896905][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:38:35.902641][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:38:40.918747][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 16:38:40.923984][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:38:45.937058][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:38:45.942255][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:38:50.954399][info][173831][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:38:50.959559][info][173835][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:38:52.534276][info][173786][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 16:38:52.534282][info][173786][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 16:38:52.534295][info][173786][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 16:38:52.893441][info][173786][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 16:38:52.893695][info][173786][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 16:38:52.893699][info][173786][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 16:38:52.894387][info][173786][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 16:38:54.422898][info][173786][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x30B69950
+[06/15 16:38:54.422955][info][173786][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 16:41:28.199413][info][175920][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 16:41:28.199449][info][175920][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 16:41:28.199455][info][175920][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:41:28.199461][info][175920][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 16:41:29.209808][info][175920][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 16:41:29.209831][info][175920][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:41:29.230914][info][175920][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 16:41:29.230954][info][175920][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x29060950
+[06/15 16:41:29.249087][info][175920][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 16:41:29.249095][info][175920][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 16:41:29.249100][info][175920][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 16:41:29.249104][info][175920][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 16:41:29.249108][info][175920][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 16:41:29.253286][info][175920][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 16:41:29.253290][info][175920][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 16:41:29.253287][info][175964][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 16:41:29.835299][info][175964][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 16:41:30.121175][warning][175968][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 16:41:33.167094][warning][175982][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**33 logs in 3045ms, last: 16:41:31.257449**]
+[06/15 16:41:34.835662][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.593882fps
+[06/15 16:41:34.872796][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.658970fps
+[06/15 16:41:39.850454][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:41:39.889706][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:41:44.870893][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:41:44.909682][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:41:49.890836][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:41:49.927364][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:41:54.906050][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:41:54.942663][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 16:41:59.925828][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:41:59.962256][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:42:04.942582][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:42:04.983883][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 16:42:09.961778][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:42:10.001500][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:42:14.980728][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:42:15.016966][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 16:42:20.000651][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:42:20.038562][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 16:42:25.016308][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:42:25.052372][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 16:42:30.034894][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:42:30.075100][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 16:42:35.052651][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:42:35.090579][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:42:40.074702][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 16:42:40.117115][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.043772fps
+[06/15 16:42:45.093115][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:42:45.129682][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/15 16:42:50.111937][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:42:50.150127][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:42:55.126607][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:42:55.167774][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:43:00.149040][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 16:43:00.185997][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:43:05.164703][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:43:05.205825][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:43:10.182247][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:43:10.220878][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 16:43:15.200784][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:43:15.239611][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:43:20.220754][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:43:20.258651][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:43:25.237552][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:43:25.277498][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:43:30.256633][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:43:30.292894][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 16:43:35.277135][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:43:35.317546][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.049751fps
+[06/15 16:43:40.294628][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:43:40.331681][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 16:43:45.311074][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:43:45.350790][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:43:50.328424][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:43:50.366313][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:43:55.350196][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:43:55.387805][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:44:00.365097][info][175964][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:44:00.403958][info][175968][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:44:01.741429][info][175920][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 16:44:01.741436][info][175920][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 16:44:01.741451][info][175920][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 16:44:02.107391][info][175920][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 16:44:02.107611][info][175920][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 16:44:02.107614][info][175920][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 16:44:02.108391][info][175920][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 16:44:03.631357][info][175920][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x29060950
+[06/15 16:44:03.631416][info][175920][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 16:44:26.377439][info][177268][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 16:44:26.377475][info][177268][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 16:44:26.377481][info][177268][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:44:26.377486][info][177268][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 16:44:27.387602][info][177268][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 16:44:27.387625][info][177268][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:44:27.409832][info][177268][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 16:44:27.409873][info][177268][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x2C0D9950
+[06/15 16:44:27.428084][info][177268][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 16:44:27.428095][info][177268][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 16:44:27.428102][info][177268][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 16:44:27.428107][info][177268][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 16:44:27.428113][info][177268][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 16:44:27.433395][info][177268][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 16:44:27.433399][info][177268][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 16:44:27.433464][info][177314][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 16:44:28.012223][info][177314][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 16:44:28.331403][warning][177318][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 16:44:31.366884][warning][177332][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**29 logs in 3035ms, last: 16:44:29.297532**]
+[06/15 16:44:33.040026][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.429596fps
+[06/15 16:44:33.045244][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.490234fps
+[06/15 16:44:38.056067][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:44:38.061256][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:44:43.074704][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:44:43.079872][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:44:48.094163][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:44:48.099397][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:44:53.112340][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:44:53.117484][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:44:58.131105][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:44:58.136286][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:45:03.152064][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:45:03.157339][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:45:08.166786][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 16:45:08.173594][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:45:13.183505][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:45:13.188740][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 16:45:18.203332][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:45:18.208617][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:45:23.222367][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:45:23.227491][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:45:28.239132][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:45:28.244335][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:45:33.258048][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:45:33.263235][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:45:38.277903][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:45:38.283402][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:45:43.296492][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:45:43.301725][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:45:48.316446][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:45:48.321576][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 16:45:53.336898][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:45:53.342940][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:45:58.358438][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 16:45:58.367627][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.049751fps
+[06/15 16:46:03.370244][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.133705fps
+[06/15 16:46:03.375393][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.151758fps
+[06/15 16:46:08.391872][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 16:46:08.397322][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 16:46:13.410384][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 16:46:13.417172][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:46:18.427397][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:46:18.432643][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:46:23.443947][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:46:23.449210][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:46:28.460831][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:46:28.466159][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:46:33.479021][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 16:46:33.484275][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 16:46:38.506136][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.037796fps
+[06/15 16:46:38.511352][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.037796fps
+[06/15 16:46:43.516971][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.133705fps
+[06/15 16:46:43.523281][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/15 16:46:48.537047][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 16:46:48.542239][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 16:46:53.552891][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 16:46:53.558033][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 16:46:58.569793][info][177314][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 16:46:58.574943][info][177318][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 16:46:58.645356][warning][177318][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 16:47:01.668620][warning][177318][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**91 logs in 3023ms**]
+[06/15 16:47:03.286286][info][177268][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 16:47:03.286292][info][177268][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 16:47:03.286302][info][177268][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 16:47:03.676002][info][177268][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 16:47:03.676331][info][177268][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 16:47:03.676336][info][177268][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 16:47:03.679570][info][177268][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 16:47:05.554303][info][177268][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x2C0D9950
+[06/15 16:47:05.554384][info][177268][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 16:47:05.558360][warning][178473][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**48 logs in 3889ms, last: 16:47:03.263662**]
+[06/15 16:59:41.414432][info][182938][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 16:59:41.414474][info][182938][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 16:59:41.414481][info][182938][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:59:41.414486][info][182938][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 16:59:42.421574][info][182938][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 16:59:42.421596][info][182938][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 16:59:42.443049][info][182938][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 16:59:42.443089][info][182938][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x2EFAE830
+[06/15 16:59:42.460406][info][182938][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 16:59:42.460413][info][182938][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 16:59:42.460418][info][182938][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 16:59:42.460422][info][182938][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 16:59:42.460426][info][182938][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 16:59:42.464491][info][182938][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 16:59:42.464495][info][182938][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 16:59:42.464487][info][182982][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 16:59:43.052182][info][182982][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 16:59:43.364228][warning][182986][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 16:59:46.400517][warning][183000][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**23 logs in 3036ms, last: 16:59:44.158463**]
+[06/15 16:59:48.068288][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.496311fps
+[06/15 16:59:48.073333][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.563324fps
+[06/15 16:59:53.089837][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 16:59:53.094985][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 16:59:58.098811][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.145739fps
+[06/15 16:59:58.104003][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.145739fps
+[06/15 17:00:03.120185][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:00:03.125355][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 17:00:08.136980][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:00:08.142178][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:00:13.155648][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:00:13.160805][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:00:18.176498][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:00:18.182742][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 17:00:23.194578][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:00:23.199772][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:00:28.212884][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:00:28.218064][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:00:33.234302][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:00:33.239396][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 17:00:38.246953][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.127693fps
+[06/15 17:00:38.252085][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/15 17:00:43.264884][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:00:43.270032][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:00:48.286970][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:00:48.292211][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 17:00:53.303367][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:00:53.308529][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:00:58.321827][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:00:58.327246][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:01:03.339606][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:01:03.344858][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:01:08.356280][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:01:08.361301][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:01:13.372556][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 17:01:13.380930][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:01:18.401926][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.025850fps
+[06/15 17:01:18.407061][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.043772fps
+[06/15 17:01:23.411052][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.145739fps
+[06/15 17:01:23.416303][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.139719fps
+[06/15 17:01:28.429895][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:01:28.435093][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:01:33.448252][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:01:33.453421][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:01:38.473351][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.043772fps
+[06/15 17:01:38.478567][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.049751fps
+[06/15 17:01:43.488942][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:01:43.493948][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 17:01:48.504009][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:01:48.509156][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 17:01:53.524049][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:01:53.529325][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:01:58.545034][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:01:58.550180][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 17:02:03.561191][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 17:02:03.566484][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:02:08.581481][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:02:08.586420][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 17:02:13.596807][info][182982][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:02:13.601955][info][182986][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 17:02:14.780145][info][182938][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 17:02:14.780154][info][182938][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 17:02:14.780171][info][182938][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 17:02:15.177966][info][182938][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 17:02:15.178342][info][182938][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 17:02:15.178349][info][182938][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 17:02:15.181932][info][182938][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 17:02:18.177390][info][182938][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x2EFAE830
+[06/15 17:02:18.177448][info][182938][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 17:02:27.517721][info][184214][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 17:02:27.517757][info][184214][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 17:02:27.517763][info][184214][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 17:02:27.517768][info][184214][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 17:02:28.526663][info][184214][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 17:02:28.526685][info][184214][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 17:02:28.549497][info][184214][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 17:02:28.549537][info][184214][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x12009830
+[06/15 17:02:28.566806][info][184214][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 17:02:28.566813][info][184214][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 17:02:28.566817][info][184214][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 17:02:28.566821][info][184214][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 17:02:28.566825][info][184214][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 17:02:28.570664][info][184214][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 17:02:28.570666][info][184214][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 17:02:28.570740][info][184250][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 17:02:29.148739][info][184250][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 17:02:29.470067][warning][184257][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 17:02:32.498547][warning][184268][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**9 logs in 3028ms, last: 17:02:29.793280**]
+[06/15 17:02:34.170628][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.465950fps
+[06/15 17:02:34.175813][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.538921fps
+[06/15 17:02:39.189012][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:02:39.194168][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:02:44.207819][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:02:44.213047][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:02:49.226549][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:02:49.231662][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:02:54.244956][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:02:54.250256][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:02:59.266329][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:02:59.271562][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 17:03:04.284475][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:03:04.289678][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:03:09.302821][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:03:09.308072][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:03:14.319341][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:03:14.324539][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:03:19.340204][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:03:19.349014][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.055731fps
+[06/15 17:03:24.359468][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:03:24.364580][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:03:29.376327][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:03:29.381455][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:03:34.397497][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:03:34.403011][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:03:39.416180][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:03:39.421378][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:03:44.433395][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:03:44.438628][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:03:49.454012][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:03:49.459112][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 17:03:54.470354][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:03:54.475818][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:03:59.489956][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:03:59.495060][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:04:04.513089][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/15 17:04:04.518210][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 17:04:09.528474][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 17:04:09.533704][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:04:14.544063][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:04:14.549335][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:04:19.566074][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:04:19.571410][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 17:04:24.581386][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 17:04:24.586702][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 17:04:29.603145][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:04:29.608270][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 17:04:34.621115][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:04:34.626160][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:04:39.637482][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:04:39.645657][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 17:04:44.659645][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:04:44.668696][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 17:04:49.675017][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:04:49.680252][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.133705fps
+[06/15 17:04:54.693505][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:04:54.698677][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:04:59.712333][info][184250][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:04:59.717550][info][184257][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:05:00.357549][info][184214][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 17:05:00.357555][info][184214][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 17:05:00.357569][info][184214][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 17:05:00.723658][info][184214][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 17:05:00.723991][info][184214][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 17:05:00.723995][info][184214][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 17:05:00.725198][info][184214][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 17:05:03.743950][info][184214][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x12009830
+[06/15 17:05:03.744014][info][184214][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 17:05:22.751185][info][185527][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 17:05:22.751220][info][185527][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 17:05:22.751226][info][185527][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 17:05:22.751231][info][185527][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 17:05:23.758808][info][185527][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 17:05:23.758830][info][185527][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 17:05:23.780898][info][185527][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 17:05:23.780937][info][185527][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x5748830
+[06/15 17:05:23.798660][info][185527][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 17:05:23.798666][info][185527][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 17:05:23.798671][info][185527][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 17:05:23.798675][info][185527][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 17:05:23.798679][info][185527][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 17:05:23.802283][info][185527][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 17:05:23.802285][info][185527][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 17:05:23.802338][info][185571][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 17:05:24.371603][info][185571][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 17:05:24.693783][warning][185575][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 17:05:27.704293][warning][185575][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**91 logs in 3010ms**]
+[06/15 17:05:29.394999][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.459887fps
+[06/15 17:05:29.410413][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.429596fps
+[06/15 17:05:33.728533][warning][185575][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**181 logs in 6024ms**]
+[06/15 17:05:34.409083][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.115677fps
+[06/15 17:05:34.428245][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:05:39.433334][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.049751fps
+[06/15 17:05:39.450444][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 17:05:44.446834][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.121683fps
+[06/15 17:05:44.459437][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.145739fps
+[06/15 17:05:45.757136][warning][185575][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**362 logs in 12028ms**]
+[06/15 17:05:49.469385][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/15 17:05:49.481959][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 17:05:54.485125][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:05:54.492411][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.133705fps
+[06/15 17:05:59.503634][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:05:59.508747][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:06:04.521181][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:06:04.526363][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:06:09.538179][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:06:09.543357][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:06:09.784482][warning][185802][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**248 logs in 24027ms, last: 17:05:54.031162**]
+[06/15 17:06:14.557488][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:06:14.562762][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:06:19.575103][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:06:19.580247][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:06:24.599521][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.049751fps
+[06/15 17:06:24.604862][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.049751fps
+[06/15 17:06:29.611559][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.127693fps
+[06/15 17:06:29.616837][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/15 17:06:34.632473][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:06:34.637784][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:06:39.646741][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.115677fps
+[06/15 17:06:39.651919][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 17:06:44.668874][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:06:44.674410][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 17:06:49.690764][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:06:49.698347][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.055731fps
+[06/15 17:06:54.706019][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:06:54.711154][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/15 17:06:59.726601][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:06:59.732124][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:07:04.738736][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.127693fps
+[06/15 17:07:04.744211][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/15 17:07:09.757898][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:07:09.763161][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:07:14.780627][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/15 17:07:14.785850][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 17:07:19.799547][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:07:19.804691][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:07:24.813631][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.115677fps
+[06/15 17:07:24.818931][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 17:07:29.831545][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:07:29.836622][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:07:34.857940][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.043772fps
+[06/15 17:07:34.863047][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.043772fps
+[06/15 17:07:39.871127][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.121683fps
+[06/15 17:07:39.876332][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 17:07:44.887502][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:07:44.892681][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:07:49.910945][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/15 17:07:49.916035][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 17:07:54.927881][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:07:54.933234][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:07:59.945411][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:07:59.954127][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:08:04.965651][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:08:04.972257][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:08:09.983220][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:08:09.988365][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:08:14.999174][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 17:08:15.004492][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:08:20.017765][info][185571][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:08:20.022885][info][185575][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:08:24.556703][info][185527][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 17:08:24.556709][info][185527][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 17:08:24.556723][info][185527][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 17:08:24.957026][info][185527][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 17:08:24.957214][info][185527][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 17:08:24.957218][info][185527][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 17:08:24.960162][info][185527][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 17:08:27.962714][info][185527][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x5748830
+[06/15 17:08:27.962776][info][185527][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 17:08:30.704581][info][187051][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 17:08:30.704617][info][187051][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 17:08:30.704623][info][187051][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 17:08:30.704628][info][187051][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 17:08:31.711832][info][187051][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 17:08:31.711854][info][187051][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 17:08:31.733246][info][187051][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 17:08:31.733296][info][187051][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x14D50830
+[06/15 17:08:31.750803][info][187051][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 17:08:31.750809][info][187051][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 17:08:31.750814][info][187051][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 17:08:31.750818][info][187051][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 17:08:31.750822][info][187051][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 17:08:31.754946][info][187051][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 17:08:31.754948][info][187051][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 17:08:31.754952][info][187094][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 17:08:32.313716][info][187094][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 17:08:32.625209][warning][187098][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 17:08:35.670337][warning][187100][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**25 logs in 3045ms, last: 17:08:33.458201**]
+[06/15 17:08:37.332585][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.484159fps
+[06/15 17:08:37.337668][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.526735fps
+[06/15 17:08:42.348717][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 17:08:42.356376][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:08:47.370878][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:08:47.375994][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:08:52.389358][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:08:52.394429][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:08:57.405117][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:08:57.410241][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/15 17:09:02.421390][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:09:02.426959][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:09:07.443079][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:09:07.448218][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:09:12.461316][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:09:12.466401][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:09:17.484070][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:09:17.489307][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/15 17:09:22.501702][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:09:22.506847][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:09:27.518518][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:09:27.523683][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:09:32.535521][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:09:32.540697][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:09:37.557385][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:09:37.562463][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/15 17:09:42.574669][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:09:42.579746][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:09:47.590300][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 17:09:47.596904][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:09:52.609482][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:09:52.614645][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:09:57.626476][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:09:57.631858][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:10:02.650019][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/15 17:10:02.656092][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.055731fps
+[06/15 17:10:07.666035][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 17:10:07.671446][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:10:12.687042][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:10:12.692305][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:10:17.704288][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:10:17.709463][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:10:22.723722][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:10:22.728868][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:10:27.741647][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:10:27.749037][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 17:10:32.760718][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:10:32.765891][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:10:37.776096][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:10:37.781317][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:10:38.945248][warning][187098][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 17:10:41.969532][warning][187098][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**91 logs in 3024ms**]
+[06/15 17:10:42.795435][info][187094][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:10:42.800623][info][187098][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:10:43.583914][info][187051][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 17:10:43.583919][info][187051][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 17:10:43.583929][info][187051][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 17:10:43.970563][info][187051][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 17:10:43.970846][info][187051][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 17:10:43.970851][info][187051][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 17:10:43.972730][info][187051][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 17:10:46.893645][info][187051][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x14D50830
+[06/15 17:10:46.893709][info][187051][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 17:10:47.113237][warning][188105][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**48 logs in 5143ms, last: 17:10:43.563867**]
+[06/15 17:14:38.632056][info][189451][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/15 17:14:38.632092][info][189451][DeviceManager.cpp:25] Current found device(s): (1)
+[06/15 17:14:38.632098][info][189451][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 17:14:38.632103][info][189451][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/15 17:14:39.641419][info][189451][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/15 17:14:39.641441][info][189451][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/15 17:14:39.663678][info][189451][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/15 17:14:39.663718][info][189451][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x37B79280
+[06/15 17:14:39.681897][info][189451][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/15 17:14:39.681904][info][189451][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/15 17:14:39.681909][info][189451][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/15 17:14:39.681913][info][189451][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/15 17:14:39.681917][info][189451][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/15 17:14:39.685553][info][189451][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/15 17:14:39.685557][info][189451][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/15 17:14:39.685551][info][189496][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/15 17:14:40.244158][info][189496][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/15 17:14:40.564100][warning][189500][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 17:14:43.625478][warning][189520][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**1 logs in 3061ms, last: 17:14:40.624290**]
+[06/15 17:14:45.268100][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.453821fps
+[06/15 17:14:45.273669][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.496311fps
+[06/15 17:14:50.284179][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/15 17:14:50.289353][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:14:55.302475][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:14:55.307760][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:15:00.320110][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:15:00.325331][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:15:05.337337][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:15:05.342508][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:15:10.357295][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:15:10.362485][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 17:15:15.373173][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:15:15.378353][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:15:20.391506][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:15:20.396669][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:15:25.409594][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:15:25.414619][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:15:30.427243][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:15:30.432410][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:15:35.444401][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:15:35.449707][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:15:40.465370][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/15 17:15:40.470538][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:15:45.480936][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:15:45.486375][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:15:50.500880][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:15:50.506065][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:15:55.517621][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:15:55.522681][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:16:00.537820][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:16:00.543040][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/15 17:16:05.551413][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.115677fps
+[06/15 17:16:05.556519][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 17:16:10.570276][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:16:10.575496][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:16:15.587173][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:16:15.592334][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/15 17:16:20.608396][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/15 17:16:20.613615][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:16:25.626326][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:16:25.631483][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:16:30.642146][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:16:30.647398][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:16:35.658906][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:16:35.664250][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/15 17:16:40.679178][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/15 17:16:40.684370][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/15 17:16:45.697917][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/15 17:16:45.703220][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:16:50.715176][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/15 17:16:50.720464][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/15 17:16:55.732659][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/15 17:16:55.740247][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/15 17:16:58.758362][warning][189500][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset!
+[06/15 17:17:00.748160][info][189496][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/15 17:17:00.753304][info][189500][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/15 17:17:01.784700][warning][189500][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**91 logs in 3026ms**]
+[06/15 17:17:03.396822][info][189451][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/15 17:17:03.396828][info][189451][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/15 17:17:03.396840][info][189451][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/15 17:17:03.782801][info][189451][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/15 17:17:03.782981][info][189451][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/15 17:17:03.782982][info][189451][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/15 17:17:03.783783][info][189451][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/15 17:17:06.899742][info][189451][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x37B79280
+[06/15 17:17:06.899803][info][189451][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/15 17:17:07.077593][warning][190560][Pipeline.cpp:324] [CL2T441004R] Output frameset queue is full, drop oldest frameset! [**48 logs in 5292ms, last: 17:17:03.380469**]
+[06/16 10:54:26.344330][info][13594][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/16 10:54:26.344367][info][13594][DeviceManager.cpp:25] Current found device(s): (1)
+[06/16 10:54:26.344373][info][13594][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 10:54:26.344378][info][13594][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/16 10:54:27.356246][info][13594][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/16 10:54:27.356269][info][13594][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 10:54:27.380800][info][13594][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/16 10:54:27.380837][info][13594][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x26B02220
+[06/16 10:54:27.397953][info][13594][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/16 10:54:27.397962][info][13594][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/16 10:54:27.397966][info][13594][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/16 10:54:27.397970][info][13594][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/16 10:54:27.397974][info][13594][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/16 10:54:27.401388][info][13594][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/16 10:54:27.401390][info][13594][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/16 10:54:27.401389][info][13627][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/16 10:54:27.406265][info][13594][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/16 10:54:27.406268][info][13594][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/16 10:54:27.406275][info][13594][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STOPPING@Color
+[06/16 10:54:28.332652][info][13594][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/16 10:54:28.332678][info][13594][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/16 10:54:28.332681][info][13594][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/16 10:54:28.341307][info][13594][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/16 10:54:28.341320][info][13594][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x26B02220
+[06/16 10:54:28.341461][info][13594][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/16 10:55:33.942377][info][14008][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/16 10:55:33.942414][info][14008][DeviceManager.cpp:25] Current found device(s): (1)
+[06/16 10:55:33.942419][info][14008][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 10:55:33.942424][info][14008][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/16 10:55:34.952272][info][14008][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/16 10:55:34.952294][info][14008][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 10:55:34.972529][info][14008][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/16 10:55:34.972565][info][14008][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x34D46EF0
+[06/16 10:55:34.990292][info][14008][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/16 10:55:34.990299][info][14008][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/16 10:55:34.990303][info][14008][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/16 10:55:34.990307][info][14008][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/16 10:55:34.990312][info][14008][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/16 10:55:34.994377][info][14008][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/16 10:55:34.994380][info][14008][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/16 10:55:34.994451][info][14041][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/16 10:55:35.002275][info][14008][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/16 10:55:35.002284][info][14008][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/16 10:55:35.002304][info][14008][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STOPPING@Color
+[06/16 10:55:35.866801][info][14008][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/16 10:55:35.866823][info][14008][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/16 10:55:35.866826][info][14008][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/16 10:55:35.870170][info][14008][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/16 10:55:35.870186][info][14008][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x34D46EF0
+[06/16 10:55:35.870362][info][14008][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/16 10:55:43.855310][info][14110][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/16 10:55:43.855347][info][14110][DeviceManager.cpp:25] Current found device(s): (1)
+[06/16 10:55:43.855353][info][14110][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 10:55:43.855357][info][14110][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/16 10:55:44.865546][info][14110][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/16 10:55:44.865574][info][14110][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 10:55:44.887286][info][14110][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/16 10:55:44.887324][info][14110][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x1DCFCEF0
+[06/16 10:55:44.904998][info][14110][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/16 10:55:44.905004][info][14110][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/16 10:55:44.905009][info][14110][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/16 10:55:44.905013][info][14110][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/16 10:55:44.905017][info][14110][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/16 10:55:44.909245][info][14110][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/16 10:55:44.909248][info][14110][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/16 10:55:44.909331][info][14143][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/16 10:55:45.017856][warning][14110][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100
+[06/16 10:55:45.445367][info][14143][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/16 10:55:48.118759][warning][14145][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100 [**4 logs in 3100ms, last: 10:55:45.418768**]
+[06/16 10:55:50.473545][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.429596fps
+[06/16 10:55:50.488912][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.441704fps
+[06/16 10:55:55.491482][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 10:55:55.502263][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/16 10:56:00.511723][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 10:56:00.527994][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.043772fps
+[06/16 10:56:05.532024][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 10:56:05.541617][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/16 10:56:10.545003][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.121683fps
+[06/16 10:56:10.559174][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 10:56:15.563354][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 10:56:15.578085][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 10:56:20.583636][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 10:56:20.598945][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 10:56:25.600457][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 10:56:25.605575][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.163803fps
+[06/16 10:56:30.617203][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 10:56:30.626082][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 10:56:35.632929][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 10:56:35.637948][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/16 10:56:40.656493][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/16 10:56:40.663532][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.049751fps
+[06/16 10:56:45.673605][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 10:56:45.687118][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.055731fps
+[06/16 10:56:50.689246][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 10:56:50.701952][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 10:56:55.706792][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 10:56:55.718913][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 10:57:00.723952][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 10:57:00.735832][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 10:57:05.743400][info][14143][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 10:57:05.756104][info][14158][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 10:57:07.755162][info][14110][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/16 10:57:07.755171][info][14110][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/16 10:57:07.755189][info][14110][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/16 10:57:08.119232][info][14110][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/16 10:57:08.119634][info][14110][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/16 10:57:08.119638][info][14110][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/16 10:57:08.120335][info][14110][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/16 10:57:08.131063][info][14110][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x1DCFCEF0
+[06/16 10:57:08.131182][info][14110][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/16 10:59:31.853787][info][15564][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/16 10:59:31.853826][info][15564][DeviceManager.cpp:25] Current found device(s): (1)
+[06/16 10:59:31.853832][info][15564][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 10:59:31.853837][info][15564][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/16 10:59:32.864568][info][15564][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/16 10:59:32.864591][info][15564][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 10:59:32.884550][info][15564][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/16 10:59:32.884589][info][15564][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x146BCEF0
+[06/16 10:59:32.901695][info][15564][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/16 10:59:32.901701][info][15564][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/16 10:59:32.901706][info][15564][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/16 10:59:32.901710][info][15564][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/16 10:59:32.901714][info][15564][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/16 10:59:32.907823][info][15564][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/16 10:59:32.907827][info][15564][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/16 10:59:32.907828][info][15597][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/16 10:59:33.015105][warning][15564][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100
+[06/16 10:59:33.463271][info][15597][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/16 10:59:36.115958][warning][15610][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100 [**4 logs in 3100ms, last: 10:59:33.415752**]
+[06/16 10:59:38.480363][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.496311fps
+[06/16 10:59:38.491910][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.563324fps
+[06/16 10:59:43.497764][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 10:59:43.513782][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 10:59:48.516955][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 10:59:48.532941][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 10:59:53.538911][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 10:59:53.558313][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.049751fps
+[06/16 10:59:58.554619][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 10:59:58.570473][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/16 11:00:03.569640][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:00:03.581225][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.133705fps
+[06/16 11:00:08.591104][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/16 11:00:08.604635][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/16 11:00:13.609403][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:00:13.623327][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:00:18.628550][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:00:18.646140][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/16 11:00:23.640428][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.127693fps
+[06/16 11:00:23.650099][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.175858fps
+[06/16 11:00:28.663723][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/16 11:00:28.680809][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.019880fps
+[06/16 11:00:33.677734][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.115677fps
+[06/16 11:00:33.688571][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.151758fps
+[06/16 11:00:38.702300][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.049751fps
+[06/16 11:00:38.718358][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.019880fps
+[06/16 11:00:43.718725][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:00:43.730300][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/16 11:00:48.732886][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:00:48.738098][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.151758fps
+[06/16 11:00:53.753260][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:00:53.763653][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.049751fps
+[06/16 11:00:58.769462][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:00:58.774728][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.133705fps
+[06/16 11:01:03.791435][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/16 11:01:03.797481][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/16 11:01:08.808153][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:01:08.813370][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:01:13.828979][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:01:13.840586][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.037796fps
+[06/16 11:01:18.847364][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:01:18.852615][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/16 11:01:23.861723][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.115677fps
+[06/16 11:01:23.867008][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:01:28.879141][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:01:28.884402][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:01:33.901087][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/16 11:01:33.906491][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/16 11:01:38.913716][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.127693fps
+[06/16 11:01:38.919323][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/16 11:01:43.931653][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:01:43.936924][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:01:48.950675][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:01:48.956037][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:01:53.974263][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.055731fps
+[06/16 11:01:53.979507][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/16 11:01:58.987811][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.121683fps
+[06/16 11:01:58.993142][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/16 11:02:04.008903][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/16 11:02:04.014205][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 11:02:09.023984][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:02:09.029252][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:02:14.044008][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:02:14.049261][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:02:19.057757][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.121683fps
+[06/16 11:02:19.063043][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/16 11:02:24.075532][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:02:24.080964][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:02:29.095586][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:02:29.100901][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:02:34.112719][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:02:34.117976][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:02:39.132000][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:02:39.138429][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:02:44.148610][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:02:44.153888][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:02:49.168604][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:02:49.173941][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:02:54.186751][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:02:54.192005][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:02:59.203057][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:02:59.208308][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:03:04.221453][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:03:04.226641][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:03:09.238285][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:03:09.243525][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:03:14.254566][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:03:14.259822][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:03:19.272691][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:03:19.277989][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:03:24.289252][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:03:24.294529][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:03:29.307814][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:03:29.313004][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:03:34.327459][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:03:34.332693][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:03:39.340869][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.121683fps
+[06/16 11:03:39.347043][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:03:44.357715][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:03:44.363008][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:03:49.382370][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.049751fps
+[06/16 11:03:49.387613][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.055731fps
+[06/16 11:03:54.394754][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.127693fps
+[06/16 11:03:54.399971][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/16 11:03:59.414473][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:03:59.419719][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:04:04.430895][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:04:04.436305][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:04:09.447935][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:04:09.453123][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:04:14.468388][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:04:14.473607][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:04:19.484883][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:04:19.492972][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:04:24.500496][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:04:24.506770][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/16 11:04:29.516598][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:04:29.521915][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:04:34.532777][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:04:34.537963][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:04:39.551834][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:04:39.557069][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:04:44.567723][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:04:44.572938][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:04:49.588113][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:04:49.593350][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:04:54.596832][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.151758fps
+[06/16 11:04:54.602081][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.145739fps
+[06/16 11:04:59.620239][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.055731fps
+[06/16 11:04:59.625904][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.055731fps
+[06/16 11:05:04.636462][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:05:04.641736][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:05:09.655601][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:05:09.661062][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:05:14.671189][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:05:14.676389][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:05:19.686253][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:05:19.691453][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:05:24.707552][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:05:24.712930][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/16 11:05:29.724047][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:05:29.729331][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:05:34.737691][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.121683fps
+[06/16 11:05:34.742851][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/16 11:05:39.760227][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/16 11:05:39.765590][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/16 11:05:44.778769][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:05:44.783961][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:05:49.791647][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.121683fps
+[06/16 11:05:49.797016][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/16 11:05:54.811356][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:05:54.816629][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:05:59.827255][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:05:59.832358][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:06:04.842177][info][15597][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:06:04.847365][info][15612][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:06:06.751837][info][15564][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/16 11:06:06.751844][info][15564][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/16 11:06:06.751860][info][15564][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/16 11:06:07.119598][info][15564][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/16 11:06:07.119856][info][15564][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/16 11:06:07.119861][info][15564][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/16 11:06:07.123047][info][15564][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/16 11:06:07.139584][info][15564][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x146BCEF0
+[06/16 11:06:07.139767][info][15564][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/16 11:14:58.391054][info][21536][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/16 11:14:58.391091][info][21536][DeviceManager.cpp:25] Current found device(s): (1)
+[06/16 11:14:58.391097][info][21536][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 11:14:58.391102][info][21536][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/16 11:14:59.398387][info][21536][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/16 11:14:59.398410][info][21536][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 11:14:59.418652][info][21536][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/16 11:14:59.418691][info][21536][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0xFA59800
+[06/16 11:14:59.435891][info][21536][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/16 11:14:59.435903][info][21536][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/16 11:14:59.435907][info][21536][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/16 11:14:59.435912][info][21536][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/16 11:14:59.435916][info][21536][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/16 11:14:59.440778][info][21536][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/16 11:14:59.440782][info][21536][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/16 11:14:59.440781][info][21588][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/16 11:14:59.549007][warning][21536][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100
+[06/16 11:14:59.997559][info][21588][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/16 11:15:02.649790][warning][21590][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100 [**4 logs in 3100ms, last: 11:14:59.949995**]
+[06/16 11:15:05.014815][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.496311fps
+[06/16 11:15:05.053030][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.616301fps
+[06/16 11:15:10.034835][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:15:10.070712][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:15:15.051810][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:15:15.087714][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:15:20.066828][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:15:20.106157][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:15:25.088551][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/16 11:15:25.123028][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:15:30.108893][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:15:30.146408][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/16 11:15:35.123656][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.115677fps
+[06/16 11:15:35.160071][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/16 11:15:40.141098][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:15:40.173232][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.121683fps
+[06/16 11:15:45.158554][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:15:45.195698][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/16 11:15:50.174992][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:15:50.215800][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:15:55.192472][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:15:55.233571][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:16:00.209387][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:16:00.248086][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:16:05.229034][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:16:05.269319][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 11:16:10.249835][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:16:10.286832][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:16:15.264895][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:16:15.303358][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:16:20.282151][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:16:20.320171][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:16:25.298779][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:16:25.337723][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:16:30.316248][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:16:30.356475][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:16:35.336717][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:16:35.374985][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:16:40.354405][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:16:40.392837][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:16:45.371275][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:16:45.411614][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:16:50.391325][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:16:50.428004][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:16:55.405960][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:16:55.444257][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:17:00.423028][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:17:00.462390][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:17:05.442022][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:17:05.479816][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:17:10.458790][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:17:10.499695][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:17:15.478010][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:17:15.516744][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:17:20.496491][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:17:20.536089][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:17:25.513620][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:17:25.551721][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:17:30.529564][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:17:30.571632][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:17:35.548413][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:17:35.590771][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:17:40.565766][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:17:40.604917][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:17:45.583778][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:17:45.623980][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:17:50.599708][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:17:50.641670][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:17:55.619896][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:17:55.658671][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:18:00.638251][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:18:00.678799][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:18:05.657716][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:18:05.694058][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:18:10.673715][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:18:10.714304][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:18:15.692403][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:18:15.730941][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:18:20.711677][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:18:20.749657][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:18:25.730884][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:18:25.762938][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/16 11:18:30.747448][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:18:30.785404][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.067703fps
+[06/16 11:18:35.765855][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:18:35.804134][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:18:40.780945][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:18:40.823782][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:18:45.802463][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:18:45.839656][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:18:50.818644][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:18:50.857468][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:18:55.836508][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:18:55.877138][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:19:00.858958][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/16 11:19:00.895816][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:19:05.873971][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:19:05.912920][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:19:10.890700][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:19:10.929968][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:19:15.910675][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:19:15.949764][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:19:20.927104][info][21588][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:19:20.963130][info][21592][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.115677fps
+[06/16 11:19:23.365555][info][21536][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/16 11:19:23.365563][info][21536][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/16 11:19:23.365583][info][21536][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/16 11:19:23.733169][info][21536][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/16 11:19:23.733393][info][21536][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/16 11:19:23.733401][info][21536][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/16 11:19:23.734111][info][21536][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/16 11:19:23.744194][info][21536][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0xFA59800
+[06/16 11:19:23.744282][info][21536][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/16 11:28:39.543774][info][33257][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/16 11:28:39.543786][info][33257][DeviceManager.cpp:25] Current found device(s): (1)
+[06/16 11:28:39.543787][info][33257][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 11:28:39.543789][info][33257][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/16 11:28:40.552627][info][33257][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/16 11:28:40.552649][info][33257][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 11:28:40.577253][info][33257][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/16 11:28:40.577294][info][33257][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x1B02800
+[06/16 11:28:40.595323][info][33257][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/16 11:28:40.595329][info][33257][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/16 11:28:40.595333][info][33257][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/16 11:28:40.595337][info][33257][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/16 11:28:40.595342][info][33257][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/16 11:28:40.601058][info][33257][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/16 11:28:40.601061][info][33257][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/16 11:28:40.601067][info][33303][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/16 11:28:40.709703][warning][33257][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100
+[06/16 11:28:41.154987][info][33303][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/16 11:28:43.810462][warning][33306][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100 [**4 logs in 3100ms, last: 11:28:41.110465**]
+[06/16 11:28:46.173062][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.490234fps
+[06/16 11:28:46.178286][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.557220fps
+[06/16 11:28:51.188647][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:28:51.194581][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:28:56.208794][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:28:56.214017][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:29:01.229481][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:29:01.234692][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:29:06.247064][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:29:06.252375][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:29:11.264433][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:29:11.269908][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:29:16.283104][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:29:16.289114][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:29:21.304503][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:29:21.309756][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:29:26.322681][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:29:26.327853][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:29:31.338531][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:29:31.343917][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:29:36.357711][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:29:36.362967][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:29:41.377089][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:29:41.382354][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:29:46.394032][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:29:46.399130][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:29:51.412266][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:29:51.417629][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:29:56.430546][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:29:56.435837][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:30:01.449799][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:30:01.455017][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:30:06.466260][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:30:06.471762][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:30:11.486162][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:30:11.491383][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:30:16.506295][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:30:16.511612][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:30:21.523287][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:30:21.528508][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:30:26.538288][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:30:26.543612][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:30:31.559072][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:30:31.564383][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 11:30:36.575043][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:30:36.580322][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:30:41.592785][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:30:41.598129][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:30:46.610848][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:30:46.616080][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:30:51.632348][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/16 11:30:51.637676][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 11:30:56.648159][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:30:56.653339][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:31:01.671444][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.061718fps
+[06/16 11:31:01.679518][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.043772fps
+[06/16 11:31:06.686178][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:31:06.691464][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.127693fps
+[06/16 11:31:11.703373][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:31:11.708741][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:31:16.723188][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:31:16.728699][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:31:21.743053][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:31:21.748315][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:31:26.758464][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:31:26.763801][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:31:31.777382][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:31:31.782698][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:31:36.795539][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:31:36.800865][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:31:41.813685][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:31:41.818949][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:31:46.831529][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:31:46.837019][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:31:51.852430][info][33303][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:31:51.860534][info][33308][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.061718fps
+[06/16 11:31:54.186171][info][33257][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/16 11:31:54.186179][info][33257][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/16 11:31:54.186195][info][33257][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/16 11:31:54.559195][info][33257][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/16 11:31:54.559501][info][33257][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/16 11:31:54.559506][info][33257][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/16 11:31:54.561196][info][33257][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/16 11:31:54.590348][info][33257][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x1B02800
+[06/16 11:31:54.590556][info][33257][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed
+[06/16 11:38:29.942358][info][37097][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[06/16 11:38:29.942370][info][37097][DeviceManager.cpp:25] Current found device(s): (1)
+[06/16 11:38:29.942371][info][37097][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 11:38:29.942373][info][37097][DeviceManager.cpp:405] Enable net device enumeration: true
+[06/16 11:38:30.948318][info][37097][DeviceManager.cpp:25] Current device(s) list: (1)
+[06/16 11:38:30.948334][info][37097][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R, Connection: USB3.2
+[06/16 11:38:30.970646][info][37097][DeviceManager.cpp:199] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL2T441004R FW: 1.2.7
+[06/16 11:38:30.970689][info][37097][Pipeline.cpp:54] [CL2T441004R] Pipeline created with device: {name: Femto Mega, sn: CL2T441004R}, @0x22937800
+[06/16 11:38:30.983784][info][37097][Pipeline.cpp:228] [CL2T441004R] Check and set config done!
+[06/16 11:38:30.983790][info][37097][Pipeline.cpp:266] [CL2T441004R] Try to start streams!
+[06/16 11:38:30.983793][info][37097][VideoSensor.cpp:58] [CL2T441004R] Try to start stream: {type: Color, format: RGB, width: 1920, height: 1080, fps: 30}
+[06/16 11:38:30.983796][info][37097][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPED to STARTING@Color
+[06/16 11:38:30.983800][info][37097][VideoSensor.cpp:127] [CL2T441004R] Start backend stream: {type: Color, format: MJPG, width: 1920, height: 1080, fps: 30}
+[06/16 11:38:30.988988][info][37097][Pipeline.cpp:293] [CL2T441004R] Start streams done!
+[06/16 11:38:30.988990][info][37097][Pipeline.cpp:250] [CL2T441004R] Pipeline start done!
+[06/16 11:38:30.988995][info][37142][ObV4lUvcDevicePort.cpp:424] Start to capture: /dev/video0
+[06/16 11:38:31.163654][warning][37097][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100
+[06/16 11:38:31.547624][info][37142][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STARTING to STREAMING@Color
+[06/16 11:38:34.264218][warning][37159][Pipeline.cpp:335] [CL2T441004R] Wait for frame timeout, you can try to increase the wait time! current timeout=100 [**3 logs in 3100ms, last: 11:38:31.464185**]
+[06/16 11:38:36.565139][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.490234fps
+[06/16 11:38:36.570575][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.526735fps
+[06/16 11:38:41.584843][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:38:41.590263][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:38:46.599548][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:38:46.604959][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:38:51.621372][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.067703fps
+[06/16 11:38:51.626544][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 11:38:56.638108][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:38:56.643342][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:39:01.655579][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:39:01.660968][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:39:06.673514][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:39:06.678916][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:39:11.694038][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:39:11.699307][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:39:16.711110][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:39:16.716370][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:39:21.727837][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:39:21.733046][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:39:26.743405][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:39:26.748693][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:39:31.764263][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.073690fps
+[06/16 11:39:31.769609][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.073690fps
+[06/16 11:39:36.783937][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:39:36.789631][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:39:41.799979][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.103670fps
+[06/16 11:39:41.805264][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:39:46.818396][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:39:46.823674][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:39:51.837008][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:39:51.842289][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:39:56.855675][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:39:56.860976][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:40:01.872316][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:40:01.877619][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:40:06.891455][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:40:06.896740][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:40:11.911387][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.079681fps
+[06/16 11:40:11.916647][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.079681fps
+[06/16 11:40:16.926138][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:40:16.931369][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.109673fps
+[06/16 11:40:21.943249][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.097666fps
+[06/16 11:40:21.948491][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.097666fps
+[06/16 11:40:26.961969][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:40:26.967217][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:40:31.981107][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.085674fps
+[06/16 11:40:31.986347][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.085674fps
+[06/16 11:40:36.999127][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.091669fps
+[06/16 11:40:37.004392][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.091669fps
+[06/16 11:40:42.014742][info][37142][VideoSensor.cpp:153] [CL2T441004R] Color backend frame callback, frameRate=30.109673fps
+[06/16 11:40:42.019945][info][37161][SensorBase.cpp:379] [CL2T441004R] Color Streaming... frameRate=30.103670fps
+[06/16 11:40:45.283260][info][37097][Pipeline.cpp:367] [CL2T441004R] Try to stop pipeline!
+[06/16 11:40:45.283266][info][37097][Pipeline.cpp:343] [CL2T441004R] Try to stop streams!
+[06/16 11:40:45.283280][info][37097][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STREAMING to STOPPING@Color
+[06/16 11:40:45.652923][info][37097][SensorBase.cpp:210] [CL2T441004R] Stream state changed from STOPPING to STOPPED@Color
+[06/16 11:40:45.653176][info][37097][Pipeline.cpp:357] [CL2T441004R] Sensor stream stopped, sensorType=Color
+[06/16 11:40:45.653180][info][37097][Pipeline.cpp:363] [CL2T441004R] Stop streams done!
+[06/16 11:40:45.653883][info][37097][Pipeline.cpp:392] [CL2T441004R] Stop pipeline done!
+[06/16 11:40:45.668694][info][37097][Pipeline.cpp:65] [CL2T441004R] Pipeline destroyed! @0x22937800
+[06/16 11:40:45.668780][info][37097][SensorBase.cpp:47] [CL2T441004R] SensorBase is destroyed

@@ -1,0 +1,12 @@
+conda deactivate
+
+export ROS_DOMAIN_ID=1
+
+source /opt/ros/humble/setup.bash
+
+ros2 topic list | grep joint
+
+ros2 node list
+
+ros2 topic echo /robotiq_gripper/width
+

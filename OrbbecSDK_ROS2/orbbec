@@ -1,0 +1,4 @@
+source install/setup.bash
+ros2 launch orbbec_camera femto_mega.launch.py
+
+rviz2

@@ -1,0 +1,20 @@
+parameters:
+  name: fr3_calibration
+  calibration_type: eye_on_base
+  robot_base_frame: panda_link0
+  robot_effector_frame: panda_link8
+  tracking_base_frame: camera_color_optical_frame
+  tracking_marker_frame: calibration_aruco
+  freehand_robot_movement: true
+  move_group_namespace: /
+  move_group: manipulator
+transform:
+  translation:
+    x: 0.9460429629809493
+    y: 0.4687491986322275
+    z: 0.6883043859236577
+  rotation:
+    x: -0.38861122111998564
+    y: -0.7322738049532189
+    z: 0.4577202242564871
+    w: 0.3213231857578287
