@@ -1,6 +1,0 @@
-conda deactivate
-
-rm -rf build/ install/ log/
-
-colcon build
-

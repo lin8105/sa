@@ -5,6 +5,7 @@
 *.pdf
 *.npy
 
+
 # 开发过程中的临时目录
 build/
 install/
@@ -12,3 +13,13 @@ log/
 __pycache__/
 .log
 .DS_Store
+
+# 忽略 MATLAB 安装包及解压目录
+matlab/
+*.zip
+*.tar.gz
+
+# 忽略临时锁定文件
+*~
+.~lock.*
+

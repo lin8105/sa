@@ -2,7 +2,11 @@ conda deactivate
 
 export ROS_DOMAIN_ID=1
 
+命令
 source /opt/ros/humble/setup.bash
+
+代码
+source install/setup.bash
 
 ros2 topic list | grep joint
 

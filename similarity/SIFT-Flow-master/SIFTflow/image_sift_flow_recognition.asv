@@ -1,0 +1,193 @@
+
+clear; clc; close all;
+
+%% 1. 环境路径硬核注入
+SIFT_FLOW_ROOT = '/home/yue/Documents/zsc_Franka/similarity/SIFT-Flow-master/SIFTflow';
+
+addpath(fullfile(SIFT_FLOW_ROOT, 'mexDenseSIFT'));
+addpath(fullfile(SIFT_FLOW_ROOT, 'mexDiscreteFlow'));
+addpath(SIFT_FLOW_ROOT); 
+
+if isempty(which('mexDenseSIFT'))
+    error('仍然找不到 mexDenseSIFT 核心！请确认 SIFT_FLOW_ROOT 路径是否正确。');
+end
+
+%% 2. 数据路径定义
+basePath = '/home/yue/Documents/zsc_Franka/data/lib'; 
+templateDir = fullfile(basePath, 'templates');       
+testSampleDir = fullfile(basePath, 'test_samples');  
+
+templateFiles = dir(fullfile(templateDir, '*.png'));
+testFiles = dir(fullfile(testSampleDir, '*.png'));
+
+if isempty(templateFiles) || isempty(testFiles)
+    error('请检查 templates/ 或 test_samples/ 文件夹中是否存在 PNG 图片！');
+end
+
+% 设定置信度判断阈值（归一化到 0-1 后，分差阈值通常设为 0.1 ~ 0.2 比较合理）
+CONFIDENCE_THRESHOLD = 0.15; 
+
+fprintf('  已知参考技能数: %d  |  待识别未知样本数: %d  \n', length(templateFiles), length(testFiles));
+
+%% 3. 【外层循环】逐个遍历每一个未知的测试样本
+for t = 1:length(testFiles)
+    currentTestName = testFiles(t).name;
+    currentTestPath = fullfile(testFiles(t).folder, currentTestName);
+    
+    fprintf('[正在分析未知样本 %d/%d]: %s\n', t, length(testFiles), currentTestName);
+    
+    % 载入图像
+    imgTest = imread(currentTestPath);
+    imgTest = im2double(imgTest); 
+    if size(imgTest, 3) == 3, imgTest = rgb2gray(imgTest); end
+    imgTest = imresize(imgTest, [200, NaN]); 
+    
+    % 建立临时数组，用于存放当前测试样本与各个模板之间的原始能量
+    rawEnergies = zeros(1, length(templateFiles));
+    % 建立临时细胞数组，保存提取出来的文件名和计算出的技能大类标签，方便后续两阶段处理
+    tempFileNames = cell(1, length(templateFiles));
+    tempSkillClasses = cell(1, length(templateFiles));
+    
+    %% 4. 【内层循环 - 阶段一】提取特征并计算原始物理能量
+    for i = 1:length(templateFiles)
+        refPath = fullfile(templateFiles(i).folder, templateFiles(i).name);
+        imgRef = imread(refPath);
+        imgRef = im2double(imgRef);   
+        if size(imgRef, 3) == 3, imgRef = rgb2gray(imgRef); end
+        imgRef = imresize(imgRef, size(imgTest));
+        
+        % SIFT-Flow 特征提取与计算
+        cellsize = 3; gridspacing = 1;
+        siftTest = mexDenseSIFT(imgTest, cellsize, gridspacing);
+        siftRef  = mexDenseSIFT(imgRef, cellsize, gridspacing);
+        
+        SIFTflowpara.alpha = 2 * 255;
+        SIFTflowpara.d = 40 * 255;
+        SIFTflowpara.gamma = 0.005 * 255;
+        SIFTflowpara.nlevels = 4;
+        SIFTflowpara.wsize = 2;
+        SIFTflowpara.topwsize = 10;
+        SIFTflowpara.nTopIterations = 60;
+        SIFTflowpara.nIterations = 30;
+        
+        [~, ~, energy] = SIFTflowc2f(siftTest, siftRef, SIFTflowpara);
+        
+        % 鲁棒性兼容处理：确保转换为纯标量数字
+        if isstruct(energy)
+            if isfield(energy, 'total'), val = energy.total;
+            elseif isfield(energy, 'energy'), val = energy.energy;
+            else, fields = fieldnames(energy); val = energy.(fields{1}); end
+        else
+            val = energy;
+        end
+        rawEnergies(i) = double(sum(val(:)));
+        
+        % 解析文件名与技能大类标签
+        [~, fileName, ~] = fileparts(templateFiles(i).name);
+        tempFileNames{i} = fileName;
+        tokens = regexp(fileName, '^([a-zA-Z_]+?)(?=\d*$|_?\d*$)', 'tokens');
+        if ~isempty(tokens)
+            skillClass = tokens{1}{1};
+            if endsWith(skillClass, '_'), skillClass = skillClass(1:end-1); end
+        else
+            skillClass = fileName;
+        end
+        tempSkillClasses{i} = skillClass;
+    end % 💡 内层循环阶段一结束
+    
+    %% 5. 【后处理 - 阶段二】引入绝对物理能量硬阈值，拦截未知新技能
+    minE = min(rawEnergies);
+    maxE = max(rawEnergies);
+    
+    % =========================================================================
+    % 🛡️ 【开放集安检门】：根据你之前跑通的真实能量级来设定这个阈值
+    % 如果连最像的模板 (minE) 的能量都大得离谱，说明库里根本没有这个技能！
+    % =========================================================================
+    REJECTION_THRESHOLD = 1.5e9;
+    
+    isUnknownSkill = false;
+    if minE > REJECTION_THRESHOLD
+        isUnknownSkill = true;
+    end
+    
+    denom = maxE - minE;
+    if denom < 1e-6, denom = 1e-6; end
+    
+    % 使用 Map 结构重新动态自动按大类归纳
+    skillMap = containers.Map('KeyType', 'char', 'ValueType', 'any');
+    globalMaxScore = -1;
+    globalBestMatchFile = '';
+    
+    for i = 1:length(templateFiles)
+        % 能量越小（越相近）映射后的得分越接近 1.0
+        currentScore = 1 - (rawEnergies(i) - minE) / denom;
+        
+        skillClass = tempSkillClasses{i};
+        fileName = tempFileNames{i};
+        
+        if isKey(skillMap, skillClass)
+            skillMap(skillClass) = [skillMap(skillClass), currentScore];
+        else
+            skillMap(skillClass) = currentScore;
+        end
+        
+        if currentScore > globalMaxScore
+            globalMaxScore = currentScore;
+            globalBestMatchFile = fileName;
+        end
+    end % 💡 归一化得分填充循环结束
+    
+    %% 6. 计算当前样本针对各个大类的统计指标并做出决策
+    skillClasses = keys(skillMap);
+    numClasses = length(skillClasses);
+    avgScores = zeros(1, numClasses);
+    
+    for c = 1:numClasses
+        avgScores(c) = mean(skillMap(skillClasses{c}));
+    end
+    
+    [bestAvgScore, bestClassIdx] = max(avgScores);
+    predictedSkillClass = skillClasses{bestClassIdx};
+    
+    % 计算区分度
+    sortedAvgScores = sort(avgScores, 'descend');
+    if length(sortedAvgScores) > 1
+        confidenceGap = sortedAvgScores(1) - sortedAvgScores(2);
+    else
+        confidenceGap = sortedAvgScores(1);
+    end
+    
+    %% 7. 打印当前样本的识别决策报告 (加入拒识分支)
+    fprintf('   ├─ 原始对齐最低能量 (Raw minE): %.2e\n', minE); 
+    
+    if isUnknownSkill
+        % 🚨 触发拦截：得分全部强行清零，判定为新技能
+        fprintf('   ├─ 各大类综合匹配得分列表:\n');
+        for c = 1:numClasses
+            fprintf('   │      【%s】平均得分: 0.0000 (已触发新技能拒识)\n', skillClasses{c});
+        end
+        fprintf('   │\n');
+        fprintf('   └─ 综合判定结果: 这是一个新技能.\n');
+    else
+        % ✅ 正常识别分支
+        fprintf('   ├─ 密集流对齐最佳匹配样本: %s (归一化得分: %.4f)\n', globalBestMatchFile, globalMaxScore);
+        fprintf('   ├─ 各大类综合匹配得分列表:\n');
+        
+        for c = 1:numClasses
+            currentClass = skillClasses{c};
+            currentAvg = avgScores(c);
+            if strcmp(currentClass, predictedSkillClass)
+                fprintf('   │      【%s】平均得分: %.4f \n', currentClass, currentAvg);
+            else
+                fprintf('   │      【%s】平均得分: %.4f\n', currentClass, currentAvg);
+            end
+        end
+        
+        fprintf('   │\n');
+        fprintf('   └─ 综合判定结果: 预测归属于 【%s】 技能类别。\n', predictedSkillClass);
+        
+        if confidenceGap < CONFIDENCE_THRESHOLD
+            fprintf('        [决策警报]: 归一化后分差(%.4f)小于阈值(%.4f)，不同动作骨架相似！\n', confidenceGap, CONFIDENCE_THRESHOLD);
+        end
+    end
+end % 💡 👈 【就是这里！】完美补齐外层样本遍历 for 循环的闭合标签

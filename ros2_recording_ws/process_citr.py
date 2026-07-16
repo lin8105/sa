@@ -10,20 +10,13 @@ def process_and_plot_citr(bota_csv, robot_csv, output_csv, output_npy, output_im
         print(f"Error: Missing input files.\n- {bota_csv}\n- {robot_csv}")
         return
 
-    # 1. 读取数据
     df_bota = pd.read_csv(bota_csv)
     df_robot = pd.read_csv(robot_csv)
 
-    # --- 核心修改：强制转换时间戳类型为 int64 ---
-    df_bota['timestamp_us'] = df_bota['timestamp_us'].astype('int64')
-    df_robot['timestamp_us'] = df_robot['timestamp_us'].astype('int64')
-
-    # 确保时间戳升序排列
     df_bota = df_bota.sort_values('timestamp_us')
     df_robot = df_robot.sort_values('timestamp_us')
 
-    print("⏱️ 正在以 Bota 100Hz 为基准进行最近邻时间对齐...")
-    # 2. 对齐
+    print("Aligning data sources on Bota 100Hz timeline...")
     df_aligned = pd.merge_asof(df_bota, df_robot, on='timestamp_us', direction='nearest', suffixes=('', '_robot'))
 
     print("Calculating 10D CITR features...")
