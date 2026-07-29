@@ -1,0 +1,37 @@
+experiment:
+  name: pour_asrf_architecture
+  seed: 42
+
+data:
+  heatmap_channels: 3
+  heatmap_height: 88
+  num_classes: 7
+
+model:
+  encoder_output_channels: 128
+  temporal_feature_channels: 64
+  num_temporal_layers: 10
+  dilation_schedule:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 16
+    - 32
+    - 64
+    - 128
+    - 256
+    - 512
+  kernel_size: 3
+  dropout: 0.5
+  causal: false
+  asb_refinement_stages: 3
+  brb_refinement_stages: 3
+
+paths:
+  dataset_root: /media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/data
+  output_root: outputs/pour_asrf_architecture
+
+# Training fields are intentionally absent in round 2. No training command is
+# provided by this architecture-only round.
+

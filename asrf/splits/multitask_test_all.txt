@@ -1,0 +1,12 @@
+test/pour/p1
+test/pour/p2
+test/pour/p3
+test/pour/p4
+test/pour/p5
+test/pp/pp_c1
+test/pp/pp_c2
+test/pp/pp_c3
+test/wipe/w1
+test/wipe/w2
+test/wipe/w3
+test/wipe/w4

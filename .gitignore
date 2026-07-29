@@ -5,21 +5,32 @@
 *.pdf
 *.npy
 
-
 # 开发过程中的临时目录
 build/
 install/
 log/
 __pycache__/
-.log
+.pytest_cache/
+*.py[cod]
+*.log
 .DS_Store
+
+# 虚拟环境与编辑器
+.venv/
+venv/
+.vscode/
+.idea/
 
 # 忽略 MATLAB 安装包及解压目录
 matlab/
 *.zip
 *.tar.gz
 
+# 模型权重
+*.pt
+*.pth
+*.ckpt
+
 # 忽略临时锁定文件
 *~
 .~lock.*
-

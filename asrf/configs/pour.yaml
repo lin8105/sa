@@ -1,0 +1,31 @@
+project_name: ASRF
+model_name: Action Segment Refinement Framework
+
+paths:
+  train_dataset_root: /media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/data/train/pour
+  test_dataset_root: /media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/data/test/pour
+  train_split: splits/pour_train.txt
+  val_split: splits/pour_val.txt
+  test_split: splits/pour_test.txt
+  test_p3_p5_split: splits/pour_test_p3_p5.txt
+  label_mapping: configs/labels_pour.yaml
+
+dataset:
+  heatmap_filename: citr_fingerprint_pure.png
+  timestamp_filename: citr_features.csv
+  segments_filename: segments.csv
+  expected_channels: 3
+  expected_height: 88
+  preserve_temporal_width: true
+
+labels:
+  num_classes: 7
+
+loss:
+  class_weighting: median_frequency
+  smoothing: gs_tmse
+  tau: 4.0
+  sigma: 1.0
+  smoothing_weight: 1.0
+  boundary_loss_weight: 0.1
+  boundary_positive_weighting: reciprocal_positive_ratio

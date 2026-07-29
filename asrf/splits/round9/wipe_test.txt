@@ -1,0 +1,4 @@
+test/wipe/w1
+test/wipe/w2
+test/wipe/w3
+test/wipe/w4

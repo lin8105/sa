@@ -1,0 +1,2 @@
+test/plug/p1
+test/plug/p2

@@ -1,0 +1,2 @@
+test/wipe/w1
+test/wipe/w2

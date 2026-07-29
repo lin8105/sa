@@ -1,0 +1,39 @@
+experiment:
+  name: pour_asrf_losses
+  seed: 42
+
+data:
+  heatmap_channels: 3
+  heatmap_height: 88
+  num_classes: 7
+
+model:
+  encoder_output_channels: 128
+  temporal_feature_channels: 64
+  num_temporal_layers: 10
+  dilation_schedule: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+  kernel_size: 3
+  dropout: 0.5
+  causal: false
+  asb_refinement_stages: 3
+  brb_refinement_stages: 3
+
+loss:
+  class_weighting: median_frequency
+  smoothing: gs_tmse
+  tau: 4.0
+  sigma: 1.0
+  smoothing_weight: 1.0
+  boundary_loss_weight: 0.1
+  boundary_positive_weighting: reciprocal_positive_ratio
+
+paths:
+  dataset_root: /media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/data
+  output_root: outputs/round3_diagnostics
+  train_dataset_root: /media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/data/train/pour
+  test_dataset_root: /media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/data/test/pour
+  train_split: splits/pour_train.txt
+  val_split: splits/pour_val.txt
+  test_split: splits/pour_test.txt
+  test_p3_p5_split: splits/pour_test_p3_p5.txt
+  label_mapping: configs/labels_pour.yaml

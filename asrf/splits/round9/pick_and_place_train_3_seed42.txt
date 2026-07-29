@@ -1,0 +1,3 @@
+train/pick and place/pp27
+train/pick and place/pp6
+train/pick and place/pp3

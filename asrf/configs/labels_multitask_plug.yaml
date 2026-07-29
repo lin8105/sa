@@ -1,0 +1,18 @@
+ontology_version: round12_multiskill_v2
+
+labels:
+  reach: 0
+  grasp: 1
+  lift: 2
+  transport: 3
+  pour: 4
+  pour_recover: 5
+  place: 6
+  release: 7
+  wipe: 8
+  retreat: 9
+  insert: 10
+
+aliases:
+  pull_out: lift
+  extract: lift

@@ -1,0 +1,12 @@
+labels:
+  reach: 0
+  grasp: 1
+  lift: 2
+  transport: 3
+  place: 4
+  release: 5
+  retreat: 6
+
+aliases:
+  pick: reach
+  translation: transport

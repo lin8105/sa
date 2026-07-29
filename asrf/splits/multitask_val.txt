@@ -1,0 +1,13 @@
+train/pour/p13
+train/pour/p14
+train/pour/p15
+train/pour/p16
+train/pick and place/pp21
+train/pick and place/pp22
+train/pick and place/pp23
+train/pick and place/pp24
+train/pick and place/pp25
+train/pick and place/pp28
+train/wipe/w7
+train/wipe/w8
+train/wipe/w9

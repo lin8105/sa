@@ -1,0 +1,73 @@
+experiment:
+  name: multitask_asrf_baseline
+  seed: 42
+
+data:
+  dataset_root: /media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/data
+  train_split: splits/multitask_train.txt
+  val_split: splits/multitask_val.txt
+  label_config: configs/labels_multitask.yaml
+  heatmap_filename: citr_fingerprint_pure.png
+  heatmap_channels: 3
+  heatmap_height: 88
+  num_classes: 9
+  batch_size: 1
+  num_workers: 0
+
+model:
+  heatmap_channels: 3
+  heatmap_height: 88
+  encoder_output_channels: 128
+  temporal_feature_channels: 64
+  num_classes: 9
+  num_temporal_layers: 10
+  dilation_schedule:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 16
+    - 32
+    - 64
+    - 128
+    - 256
+    - 512
+  kernel_size: 3
+  dropout: 0.5
+  causal: false
+  asb_refinement_stages: 3
+  brb_refinement_stages: 3
+
+loss:
+  class_weighting: median_frequency
+  smoothing: gs_tmse
+  tau: 4.0
+  sigma: 1.0
+  smoothing_weight: 1.0
+  boundary_loss_weight: 0.1
+  boundary_positive_weighting: reciprocal_frequency
+
+refinement:
+  official_boundary_threshold: 0.5
+  boundary_threshold: 0.5
+  local_maximum: strict
+  voting: majority
+
+training:
+  optimizer: adam
+  learning_rate: 0.0005
+  weight_decay: 0.0
+  max_epochs: 150
+  early_stopping_patience: 15
+  minimum_epochs: 20
+  batch_size: 1
+  num_workers: 0
+  device: cpu
+  best_metric: val_total_loss
+  save_last: true
+  deterministic: true
+  initialize_from_checkpoint: null
+  gradient_clip_norm: null
+
+paths:
+  output_dir: outputs/multitask_baseline

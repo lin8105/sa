@@ -1,0 +1,12 @@
+labels:
+  reach: 0
+  grasp: 1
+  lift: 2
+  transport: 3
+  pour: 4
+  pour_recover: 5
+  place: 6
+
+aliases:
+  pick: reach
+  translation: transport

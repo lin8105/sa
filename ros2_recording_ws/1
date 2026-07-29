@@ -1,0 +1,40 @@
+conda deactivate
+
+rm -rf build/ install/ log/
+
+colcon build
+
+insert
+拧一下回去一下，虎口卡住,但不要转法兰盘
+reach
+抓住上面，抛物线上下
+wipe
+往下按
+pour
+倒水可以快一点
+press
+往后压 要不会变蓝
+
+
+git status
+
+git add .
+
+git commit -m " "
+
+git push
+
+git clone git@github.com:lin8105/sa.git
+
+cd /home/yue/Documents/zsc_Franka
+
+conda deactivate
+conda activate /media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/conda_env
+
+git status
+git add .
+git commit -m "backup before codex"
+
+codex --sandbox workspace-write --ask-for-approval on-request
+
+git restore .

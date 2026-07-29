@@ -1,0 +1,13 @@
+train/wipe/w1
+train/wipe/w2
+train/wipe/w3
+train/wipe/w4
+train/wipe/w5
+train/wipe/w6
+train/wipe/w7
+train/wipe/w8
+train/wipe/w9
+train/wipe/w10
+train/wipe/w11
+train/wipe/w12
+train/wipe/w13
