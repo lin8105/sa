@@ -1,0 +1,50 @@
+{
+  "canonical_process_citr_SHA256": "25bc4ee75beee90cfa2cc5ea65186242f32118b07973e646161a8ea4a66053c4",
+  "checkpoint_SHA256": {
+    "184": "8a37f05b7e37fbc54794298c758628120c94ddb1f0b0e6b981459b95c93a695a",
+    "284": "607f45918226755191e6c4f2ba94b2544c38b3d04432e4a7646f28978d776132",
+    "84": "9297cf5639add3f178b8e8d4f6d5d77fdfde88780411ec7fdbc419973a446991"
+  },
+  "dev_segments": 50,
+  "heldout_dev_segments": 0,
+  "heldout_train_segments": 0,
+  "heldout_trajectory_ids_SHA256": "961734bf4ae74136cca023571a25c7f97f058ff4531cee3a8792aacce93f4cc2",
+  "normalization_implementation_SHA256": "a643bb723149e64ab803789c34942ab1ca497f604c224c613a3466c18f9f23c6",
+  "r2_code_SHA256": "26790d9ce906a6fe80b5a6e6dd16a0a235941a46bff955281f646b13d2d5dc67",
+  "round92_manifest_SHA256": "8cb05646c79441860d1dbc724e4d53797a115f016d06fb6a34806d78f402664c",
+  "round93_dev_ids_SHA256": "706dcd9a4af97147564e177cc838d816e91fce935672bc499976c2246d1ac1da",
+  "round93_selection_SHA256": "2df175ae35a03ffa5b69ca43bc837a3ffa5ca500766e1fa10669dd1d8c4cbfd3",
+  "round93_strict_test_ids_SHA256": "6b90c036ecb205db2ea987d7184b4fb6711f58a730db420e4673705d9b009ae4",
+  "round93_train_ids_SHA256": "9cb83ac91edad4a1dd528a080a9c1d318bfaa07f05de39af881902b2e5776876",
+  "round94_dev_ids_SHA256": "706dcd9a4af97147564e177cc838d816e91fce935672bc499976c2246d1ac1da",
+  "round94_dev_trajectory_ids_SHA256": "ef3c36e69e95b14de192dc9c1f7e39bd67250523c21af257cb18d1ae57bc683d",
+  "round94_memory_ids_SHA256": "92153474515504396c96b11e42afac9142db9f308ac0c980735bcf0e0d3d4c69",
+  "round94_memory_manifest_SHA256": "06eecab8073d3340d6738d3da1de65ce4a76a1aa5ae7e52abde99a789f7259eb",
+  "round94_model_freeze_SHA256": "e6e9494756a1242f02d992147a14c03ac044151db1fb6952b561bafb89d19ed2",
+  "round94_threshold_manifest_SHA256": "fbc857d099d03f4c6082a7b5befa89a3141f382eae80faf4ca37107d44ad2477",
+  "round94_train_ids_SHA256": "9cb83ac91edad4a1dd528a080a9c1d318bfaa07f05de39af881902b2e5776876",
+  "round94_train_trajectory_ids_SHA256": "5f75f352993759035bbb839a9bd37f9b9721d89436e777ec02ac9ffa1b4fe327",
+  "thresholds": {
+    "184": {
+      "0.05": 0.18883764743804932,
+      "0.1": 0.1746695637702942,
+      "0.2": 0.14848919212818146
+    },
+    "284": {
+      "0.05": 0.28609633445739746,
+      "0.1": 0.2574074864387512,
+      "0.2": 0.20989029109477997
+    },
+    "84": {
+      "0.05": 0.2771018445491791,
+      "0.1": 0.22277137637138367,
+      "0.2": 0.14152070879936218
+    },
+    "aggregate": {
+      "0.05": 0.5052769780158997,
+      "0.1": 0.3693014085292816,
+      "0.2": 0.31237345933914185
+    }
+  },
+  "train_segments": 345
+}

@@ -1,0 +1,28 @@
+{
+  "clean_test_trajectory_count": 19,
+  "dev_membership_changed": false,
+  "round": "Round94",
+  "round93_artifact": "[local-path omitted]",
+  "round93_dev_manifest_SHA256": "af2541b73f0572fd61dfc2de4502c8571eb24b43e73011b0090df503328ae376",
+  "round93_dev_segment_ids_SHA256": "706dcd9a4af97147564e177cc838d816e91fce935672bc499976c2246d1ac1da",
+  "round93_selection_SHA256": "2df175ae35a03ffa5b69ca43bc837a3ffa5ca500766e1fa10669dd1d8c4cbfd3",
+  "round93_strict_unseen_trajectory_ids_SHA256": "961734bf4ae74136cca023571a25c7f97f058ff4531cee3a8792aacce93f4cc2",
+  "round93_train_manifest_SHA256": "a997322f452eb91dbf2032b019a4e0b91ac39a01f126700e928abaf6671c1e11",
+  "round93_train_segment_ids_SHA256": "9cb83ac91edad4a1dd528a080a9c1d318bfaa07f05de39af881902b2e5776876",
+  "selected_trajectory_ids": [
+    "train/pour/p10",
+    "train/pour/p12",
+    "train/pour/p14",
+    "train/pour/p4",
+    "train/pour/p7",
+    "train/unscrew/s3",
+    "train/unscrew/s5",
+    "train/wipe/w10",
+    "train/wipe/w13",
+    "train/wipe/w2",
+    "train/wipe/w5"
+  ],
+  "selection_changed": false,
+  "strict_unseen_trajectory_count": 11,
+  "train_membership_changed": false
+}

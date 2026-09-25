@@ -1,0 +1,35 @@
+{
+  "ASRF_in_scope": false,
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 94094,
+    "unit": "trajectory"
+  },
+  "deployment_ready": false,
+  "gt_old_mask_required_for_round94": true,
+  "model": "R2_OLD_ONLY_TRAJECTORY_NORM",
+  "new_protocol_count": 1,
+  "normalization": {
+    "concatenate_old_intervals": false,
+    "delete_novel_intervals": false,
+    "first_10_citr_rows": "MAX_ABS",
+    "gripper": "CANONICAL_FIXED_RULE",
+    "novel_frame_contribution": 0,
+    "scale_source": "OLD_FRAMES_ONLY",
+    "scope": "TRAJECTORY_SHARED"
+  },
+  "primary_operating_point": "10_PERCENT_OLD_DEV_FUR",
+  "r2_seeds": [
+    84,
+    184,
+    284
+  ],
+  "round": "Round94",
+  "scope": "R2_NORMALIZATION_ABLATION",
+  "scorer": {
+    "distance": "cosine",
+    "knn_k": 20
+  },
+  "split_source": "ROUND93_FROZEN",
+  "title": "Exposure-Free Full-OLD Normalization Recovery"
+}

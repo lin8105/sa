@@ -1,0 +1,14 @@
+{
+  "cuda": true,
+  "normalization": "OLD-only trajectory-shared",
+  "objective": "OLD-only NT-Xent",
+  "protocol": "R2_OLD_ONLY_TRAJECTORY_NORM",
+  "r2_source": "[local-path omitted]",
+  "r2_source_SHA256": "26790d9ce906a6fe80b5a6e6dd16a0a235941a46bff955281f646b13d2d5dc67",
+  "seeds": [
+    84,
+    184,
+    284
+  ],
+  "test_used_for_selection": false
+}

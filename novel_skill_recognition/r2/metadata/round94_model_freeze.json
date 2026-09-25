@@ -1,0 +1,66 @@
+{
+  "architecture": "Round84-style R2Encoder; [11,128] -> 128-D L2-normalized embedding",
+  "canonical_process_citr_SHA256": "25bc4ee75beee90cfa2cc5ea65186242f32118b07973e646161a8ea4a66053c4",
+  "checkpoint_SHA256": {
+    "184": "8a37f05b7e37fbc54794298c758628120c94ddb1f0b0e6b981459b95c93a695a",
+    "284": "607f45918226755191e6c4f2ba94b2544c38b3d04432e4a7646f28978d776132",
+    "84": "9297cf5639add3f178b8e8d4f6d5d77fdfde88780411ec7fdbc419973a446991"
+  },
+  "concatenate_old_intervals": false,
+  "delete_novel_intervals": false,
+  "distance": "cosine",
+  "gripper": "CANONICAL_FIXED_RULE",
+  "heldout_dev": 0,
+  "heldout_memory": 0,
+  "heldout_threshold": 0,
+  "heldout_train": 0,
+  "k": 20,
+  "memory_SHA256": "8af255ad4e0af8e859b06c58e34c798f2b50988c488e081e610a0f8ed695e607",
+  "memory_manifest_SHA256": "06eecab8073d3340d6738d3da1de65ce4a76a1aa5ae7e52abde99a789f7259eb",
+  "normalization_audit_SHA256": "f55ffc2682678238e6aaeb6cd7d8976c32c8ef956cd5b288c39763624dd195fe",
+  "normalization_implementation_SHA256": "a643bb723149e64ab803789c34942ab1ca497f604c224c613a3466c18f9f23c6",
+  "normalization_scope": "TRAJECTORY_SHARED",
+  "novel_frame_contribution": 0,
+  "objective": "OLD-only NT-Xent",
+  "primary_FUR": 0.1,
+  "protocol": "R2_OLD_ONLY_TRAJECTORY_NORM",
+  "r2_code_SHA256": "26790d9ce906a6fe80b5a6e6dd16a0a235941a46bff955281f646b13d2d5dc67",
+  "round": "Round94",
+  "round93_artifact": "[local-path omitted]",
+  "round93_dev_manifest_SHA256": "af2541b73f0572fd61dfc2de4502c8571eb24b43e73011b0090df503328ae376",
+  "round93_selection_SHA256": "2df175ae35a03ffa5b69ca43bc837a3ffa5ca500766e1fa10669dd1d8c4cbfd3",
+  "round93_strict_unseen_ids_SHA256": "6b90c036ecb205db2ea987d7184b4fb6711f58a730db420e4673705d9b009ae4",
+  "round93_train_manifest_SHA256": "a997322f452eb91dbf2032b019a4e0b91ac39a01f126700e928abaf6671c1e11",
+  "round94_dev_manifest_SHA256": "468d1e8bf15bc3e0809bdc25294b708ecbaab4539680867ca75070cce6551013",
+  "round94_train_manifest_SHA256": "312cc59435ca4ffe368ea9825c21bb6b5416309d21a58afc946dd6c22d221ecf",
+  "scale_source": "OLD_FRAMES_ONLY",
+  "seeds": [
+    84,
+    184,
+    284
+  ],
+  "test_used_for_tuning": false,
+  "threshold_manifest_SHA256": "fbc857d099d03f4c6082a7b5befa89a3141f382eae80faf4ca37107d44ad2477",
+  "thresholds": {
+    "184": {
+      "0.05": 0.18883764743804932,
+      "0.1": 0.1746695637702942,
+      "0.2": 0.14848919212818146
+    },
+    "284": {
+      "0.05": 0.28609633445739746,
+      "0.1": 0.2574074864387512,
+      "0.2": 0.20989029109477997
+    },
+    "84": {
+      "0.05": 0.2771018445491791,
+      "0.1": 0.22277137637138367,
+      "0.2": 0.14152070879936218
+    },
+    "aggregate": {
+      "0.05": 0.5052769780158997,
+      "0.1": 0.3693014085292816,
+      "0.2": 0.31237345933914185
+    }
+  }
+}
