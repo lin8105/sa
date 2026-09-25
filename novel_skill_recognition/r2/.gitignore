@@ -37,6 +37,10 @@
 !/figures/clean_test/
 !/figures/clean_test/*.png
 /figures/clean_test/round94_asrf_r2_timeline_test_plug_*.png
+!/figures/clean_test/round94_asrf_r2_timeline_test_plug_p1.png
+!/figures/clean_test/round94_asrf_r2_timeline_test_plug_p2.png
+!/figures/clean_test/round94_asrf_r2_timeline_test_plug_p3.png
+!/figures/clean_test/round94_asrf_r2_timeline_test_plug_pl_pp.png
 
 # Never include frozen model binaries or generated runtime state in Git history.
 *.pt
