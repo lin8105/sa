@@ -29,18 +29,6 @@ and then processed independently by R2.
 
 As a result, every predicted segment receives its own embedding and novelty score. R2 does not generate a single embedding for the entire trajectory.
 
-### Trajectory-Shared Normalization
-
-Earlier segment-local normalization removed the influence of novel frames, but it also removed useful relative magnitude information between segments. The final version therefore uses one shared normalization reference for all segments within the same trajectory.
-
-The ten interaction channels use one max-absolute scale per channel, shared across all segments from that trajectory.
-
-In the current evaluation, this scale is computed using only the **GT-labeled OLD frames** of the trajectory. Novel frames do not contribute to the scale. The gripper channel keeps its fixed canonical normalization.
-
-For example, if two segments have maximum interaction magnitudes of 2 and 20, segment-local normalization would scale both to approximately 1. With a shared trajectory scale of 20, their relative magnitudes are preserved as 0.1 and 1.0.
-
-Controlled experiments showed that replacing segment-local normalization with OLD-only trajectory-shared normalization substantially recovered OLD/novel separation, while the R2 architecture, training objective, scorer, and data split remained unchanged.
-
 ---
 
 ## From PM-5 to R2
