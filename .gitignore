@@ -34,3 +34,13 @@ matlab/
 # 忽略临时锁定文件
 *~
 .~lock.*
+
+# Audited ASRF/Hybrid Round45 public-release materials
+!asrf/results/
+!asrf/results/asrf_vs_hybrid/
+!asrf/results/asrf_vs_hybrid/*.csv
+
+!asrf/docs/
+!asrf/docs/round45/
+!asrf/docs/round45/figures/
+!asrf/docs/round45/figures/*.png

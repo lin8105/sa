@@ -1,0 +1,10 @@
+# Sanitized public copy derived from the frozen Round45 configuration.
+# Historical experiment artifacts remain unchanged.
+selected_seed: 1
+threshold: 0.5
+support_gate: 0.3
+gap: 0
+point_rule: P4
+rescue: false
+minimum_separation: 0
+selection_metric: validation_F1@50
