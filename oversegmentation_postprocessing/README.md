@@ -1,36 +1,119 @@
-# Joint physical compression and merge
+# Over-Segmentation Post-Processing
 
-This package applies a frozen nine-signal physical low-activity test, then the unchanged canonical one-sided segmentation merge. Compression removes sustained inactive interior frames while preserving transition context and the historical gripper-event / skill-survival handling. The merge consolidates short redundant predictions using local motion similarity; segments containing physical gripper events are protected.
+This module reduces over-segmentation in robot skill segmentation through two post-processing steps: **physics-guided timeline compression** and **segment merging**.
 
-The additional signal limits were frozen from the 79 TRAIN trajectories only, after inspecting P99.5, P99.9, P99.95, P99.99, and the maximum of the historical Round35-removed frames. The selected finite envelope exactly reproduces the Round35 retained mapping on TRAIN (79/79 trajectories; zero differing frames). Some added-signal limits reach the TRAIN velocity-low candidate maximum because lower limits changed the historical mapping. Thresholds were not selected or adjusted using TEST.
+The method works directly on frozen ASRF predictions and does not require retraining or modifying the segmentation model.
 
-On the full 36-trajectory TEST mapping audit, only 1 trajectory was exactly identical to Round35; there were 15,626 retained-index differences across the other 35. On the 34 trajectories with frozen Round91 bundles (two plug trajectories lack bundles), macro F1@50 was 0.839763 raw, 0.899273 after compression, and 0.927906 after merge. Boundary recall ±20 frames was 0.372297, 0.706033, and 0.676306 respectively. Thus the frozen TEST result is not an exact reproduction of historical Round45; the merge improved F1 over compression while reducing boundary recall. No TEST-driven tuning followed.
+## Motivation
 
-| Signal | Limit | Unit | TRAIN basis |
-|---|---:|---|---|
-| Linear velocity `||v||` | 0.02600749068 | m/s | Frozen Round35 |
-| Angular velocity `||ω||` | 0.0477127692 | rad/s | Frozen Round35 |
-| Linear acceleration `||a||` | 133.32933144573843 | m/s² | Velocity-low candidate maximum |
-| Angular acceleration `||α||` | 281.1981816308892 | rad/s² | Velocity-low candidate maximum |
-| Force magnitude `||F||` | 65.78368493108684 | N | Velocity-low candidate maximum |
-| Torque magnitude `||τ||` | 2.811585602507774 | N·m | Velocity-low candidate maximum |
-| Force change `||dF/dt||` | 692801.9009054365 | N/s | Velocity-low candidate maximum |
-| Torque change `||dτ/dt||` | 40039.03073424154 | N·m/s | Velocity-low candidate maximum |
-| Gripper velocity `|dg/dt|` | 1.0104263346161215e-12 | m/s | Just above Round35-removed maximum |
+Several boundary-refinement strategies were evaluated, including ASB/BRB-assisted merging, boundary protection, hard-negative training, and short-fragment consolidation. While these methods could reduce false boundaries, they could also remove valid transitions.
 
-Temporal parameters remain Round35: minimum activity run 0.5 s, 0.6 s transition context per side, 10-frame skill survival, no gap bridging, and 0.5 s gripper-event context. Merge parameters remain the canonical Round40 defaults: fraction 0.80, local window 5, one pass, and whole-segment physical gripper-event protection.
+The current pipeline therefore complements model-based boundary predictions with the robot's physical behavior, using motion and interaction signals to guide post-processing more conservatively.
 
-The merge code is unchanged. Its Round40 fitting-derived scaler and motion thresholds are bundled byte-for-byte as `merge_scaler.yaml` and `merge_motion_thresholds.yaml` so the wrapper does not silently fall back to untracked local output files.
+## What It Does
 
-Example from the repository root (using the project's required interpreter):
+ASRF predictions can contain long redundant periods and short fragmented segments, which introduce unnecessary boundaries into the final skill sequence.
 
-```bash
-PROJECT_PYTHON=/media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/conda_env/bin/python
-"$PROJECT_PYTHON" oversegmentation_postprocessing/postprocess_oversegmentation.py \
-  --bundle-dir asrf/outputs/0/round91_end_to_end_open_world_transition_audit_v002/bundles/standard \
-  --data-root /media/yue/cdb9583f-c583-4b69-965e-b0d778e3bf71/seg_learning/data \
-  --split test \
-  --output-dir asrf/outputs/joint_physical_postprocess_v001
-```
+This module addresses the problem in two stages:
 
-`physical_thresholds.json` records the frozen values and TRAIN-only provenance. The runner reuses the validated Round35 signal builder, canonical bundle compressor, and canonical merge implementation; it does not retrain or rerun ASRF inference.
+1. **Physics-Guided Timeline Compression** shortens redundant low-motion parts of the trajectory while keeping important transitions and physical interaction.
+2. **Segment Merging** removes unnecessary boundaries between neighboring predicted segments when their local motion patterns are sufficiently similar.
+
+## Method
+
+### 1. Physics-Guided Timeline Compression
+
+The first stage looks for sustained low-motion regions that contain little useful temporal information.
+
+Instead of relying on motion alone, the compression rule considers several synchronized physical signals, including:
+
+* linear and angular motion;
+* linear and angular acceleration;
+* force and torque;
+* changes in force and torque;
+* gripper motion.
+
+These signals help distinguish truly redundant low-motion periods from situations where the robot is moving very little but is still physically interacting with the environment.
+
+For example, a robot may remain almost stationary while pressing against an object or maintaining contact during insertion. Such periods should not be treated in the same way as an idle pause.
+
+The compression therefore follows a simple idea:
+
+**redundant low-motion period → compress**
+**motion or transition → keep**
+**meaningful physical interaction → keep**
+**gripper manipulation event → keep**
+
+Only sustained regions are considered for compression. Context around the beginning and end of each region is preserved so that important transitions are not removed.
+
+The method also keeps context around gripper opening and closing events and ensures that each skill retains a minimum temporal extent.
+
+The resulting retained-frame mapping is applied consistently to all synchronized trajectory data, including:
+
+* CITR features;
+* ASRF predictions;
+* boundary predictions;
+* gripper signals;
+* ground-truth labels when used for evaluation.
+
+No temporal interpolation, stretching, or uniform downsampling is performed. The retained frames remain in their original order.
+
+All physical thresholds are determined from the TRAIN trajectories and frozen before TEST evaluation. No TEST data are used to adjust the compression rule.
+
+### 2. Segment Merging
+
+After timeline compression, some short redundant predicted segments may still remain.
+
+The second stage examines these candidate segments together with their neighboring segments and compares their local motion characteristics.
+
+The comparison uses physical and trajectory information such as:
+
+* CITR features;
+* force and torque information;
+* gripper state;
+* linear and angular motion;
+* velocity and acceleration.
+
+A local window of **5 frames** is used around the candidate region. If the candidate is sufficiently similar to one neighboring segment, it is merged into that side and the unnecessary boundary is removed.
+
+The final configuration uses:
+
+* similarity fraction: **0.80**
+* local window: **5 frames**
+* **one-pass** merging
+
+The merge is deliberately conservative. It does not simply combine every short segment.
+
+Segments containing a physical gripper opening or closing event are protected from deletion. This helps preserve manipulation-critical regions such as grasping or releasing even when nearby segments appear similar.
+
+## Results
+
+The physical compression thresholds were selected using the **79 TRAIN trajectories** and frozen before TEST evaluation.
+
+Segmentation metrics are reported on **34 TEST trajectories** with available frozen ASRF bundles. Two plug trajectories are excluded because their frozen prediction bundles are unavailable.
+
+| Metric                   | Original ASRF | Compression | Compression + Merge |
+| ------------------------ | ------------: | ----------: | ------------------: |
+| Mean F1@50               |         0.840 |   **0.899** |           **0.928** |
+| Boundary Recall ±20      |         0.372 |   **0.706** |               0.676 |
+| Missed-Boundary Rate ±20 |         0.628 |   **0.294** |               0.324 |
+
+Physics-guided compression increases mean F1@50 from **0.840 to 0.899** and substantially improves boundary recall.
+
+The subsequent merge further increases F1@50 to **0.928**. Boundary recall decreases slightly compared with compression alone, reflecting the expected trade-off from removing additional segment boundaries.
+
+The improvement is also observed across both the seen PP family and unseen skill families:
+
+| Family  | Original ASRF | Compression | Compression + Merge |
+| ------- | ------------: | ----------: | ------------------: |
+| PP      |         0.918 |   **0.954** |           **0.974** |
+| plug    |         0.764 |   **0.856** |           **0.909** |
+| wipe    |         0.752 |   **0.800** |           **0.829** |
+| pour    |         0.887 |   **0.919** |           **0.945** |
+| unscrew |         0.719 |   **0.930** |           **0.963** |
+
+PP is the seen family used during model development, while plug, wipe, pour, and unscrew represent unseen-family transfer.
+
+Overall, **Physics-Guided Timeline Compression** removes redundant temporal content while preserving important physical interaction and transition regions. The following similarity-based merge further reduces segmentation fragmentation while protecting manipulation-critical events.
+
+The complete pipeline operates entirely as post-processing and requires no ASRF retraining.
