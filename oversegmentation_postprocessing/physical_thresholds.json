@@ -1,0 +1,31 @@
+{
+  "status": "frozen_train_only",
+  "calibration_population": "Round35 exact removed-frame mask on the same 79 TRAIN trajectories; seven added-signal thresholds use train-only upper-envelope relaxation needed for exact mapping identity",
+  "percentiles_inspected": [99.5, 99.9, 99.95, 99.99, 100.0],
+  "train_mapping_identity": {
+    "trajectories": 79,
+    "differing_frames": 0,
+    "affected_trajectories": 0,
+    "note": "Joint candidate followed by unchanged Round35 temporal, gripper-event, and 10-frame skill-survival policy"
+  },
+  "thresholds": {
+    "linear_velocity": {"value": 0.02600749068, "unit": "m/s", "source": "unchanged Round35 frozen threshold"},
+    "angular_velocity": {"value": 0.0477127692, "unit": "rad/s", "source": "unchanged Round35 frozen threshold"},
+    "linear_acceleration": {"value": 133.32933144573843, "unit": "m/s^2", "source": "maximum in TRAIN velocity-low candidate pool; exact TRAIN mapping required this envelope"},
+    "angular_acceleration": {"value": 281.1981816308892, "unit": "rad/s^2", "source": "maximum in TRAIN velocity-low candidate pool; exact TRAIN mapping required this envelope"},
+    "force_magnitude": {"value": 65.78368493108684, "unit": "N", "source": "maximum in TRAIN velocity-low candidate pool; exact TRAIN mapping required this envelope"},
+    "torque_magnitude": {"value": 2.811585602507774, "unit": "N m", "source": "maximum in TRAIN velocity-low candidate pool; exact TRAIN mapping required this envelope"},
+    "force_change": {"value": 692801.9009054365, "unit": "N/s", "source": "maximum in TRAIN velocity-low candidate pool; exact TRAIN mapping required this envelope"},
+    "torque_change": {"value": 40039.03073424154, "unit": "N m/s", "source": "maximum in TRAIN velocity-low candidate pool; exact TRAIN mapping required this envelope"},
+    "gripper_velocity": {"value": 1.0104263346161215e-12, "unit": "m/s", "source": "next representable value above maximum among exact Round35-removed TRAIN frames"}
+  },
+  "temporal_policy": {
+    "minimum_low_activity_duration_s": 0.5,
+    "edge_context_s_per_side": 0.6,
+    "minimum_skill_survival_frames": 10,
+    "gap_bridging": false,
+    "gripper_event_handling": "unchanged Round35 event protection with 0.5 s context"
+  },
+  "signal_construction": "Validated Round35 v002 construction: canonical synchronized Bota force/torque norms; centered 3-sample smoothing and timestamp-aware derivatives; robot velocity derivatives on canonical CITR timeline; canonical gripper speed",
+  "test_used_for_threshold_selection": false
+}

@@ -1,0 +1,10 @@
+linear_velocity: 0.02600749068
+angular_velocity: 0.0477127692
+linear_acceleration: 2.4995922160215494
+angular_acceleration: 4.541420560023916
+required_fraction_candidates:
+- 0.8
+- 0.9
+- 0.95
+acceleration_source: 95th percentile of low-velocity/low-angular-velocity frames from
+  Round 27 fitting trajectories only

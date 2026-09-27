@@ -1,0 +1,63 @@
+feature_names:
+- citr_ff
+- citr_ftau
+- citr_tautau
+- citr_fv
+- citr_tauv
+- citr_vv
+- citr_fw
+- citr_tauw
+- citr_vw
+- citr_ww
+- gripper_position
+- gripper_norm
+- linear_velocity_norm
+- angular_velocity_norm
+- linear_acceleration_norm
+- angular_acceleration_norm
+median:
+- 11.698557647704
+- -0.0298645612465
+- 0.007721057523
+- 0.0012065774703649
+- -6.24192342902e-05
+- 0.00145399404307
+- 0.00054766341208
+- 5.99718782711e-05
+- 5.7728155058999933e-08
+- 0.0020671843815281
+- 0.0210784
+- 0.1497994854909028
+- 0.0379958819542299
+- 0.045424902416407564
+- 0.4068894875035706
+- 0.7870982506715035
+robust_scale:
+- 10.496664326814505
+- 0.0950009935024521
+- 0.00983640081622233
+- 0.05925570372949307
+- 0.0013220542553715184
+- 0.002154758101562242
+- 0.07514384067130978
+- 0.0015881985677644729
+- 6.208913779254617e-05
+- 0.003060216878927172
+- 0.0053781314999999975
+- 0.2220927171888125
+- 0.05471863840929201
+- 0.06348225986645667
+- 0.399461605456637
+- 0.8289948826432993
+source: Round 27 fitting trajectories only
+trajectory_ids:
+- train/pick and place/pp1
+- train/pick and place/pp2
+- train/pick and place/pp3
+- train/pick and place/pp4
+- train/pick and place/pp5
+- train/pick and place/pp6
+- train/pick and place/pp7
+- train/pick and place/pp8
+- train/pick and place/pp9
+- train/pick and place/pp10
